@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 export const HeaderComponent = styled.header`
   display: flex;
@@ -13,6 +14,11 @@ export const HeaderComponent = styled.header`
   height: 70px;
   background-color: white; // Фон белого цвета
   z-index: 1000; // Устанавливаем z-index для отображения поверх контента
+`
+
+// Ссылка на логотип
+export const LogoLink = styled(Link)`
+  text-decoration: none;
 `
 
 export const Logo = styled.div`

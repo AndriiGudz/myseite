@@ -1,7 +1,7 @@
 import { Global, css } from '@emotion/react'
 
 const globalStyles = css`
-@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+  @import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 
   * {
     box-sizing: border-box;
@@ -13,6 +13,7 @@ const globalStyles = css`
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
   }
 
   h1,
@@ -25,6 +26,7 @@ const globalStyles = css`
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: #1a1a1a;
   }
 
   #root {
@@ -34,10 +36,16 @@ const globalStyles = css`
     justify-content: center;
     align-items: center;
   }
+
+  /* Добавляем стили для смещения контента при открытом меню */
+  /* .menu-open main {
+    transform: translateY(150px);
+    transition: transform 0.5s ease;
+  } */
 `
 
 function GlobalStyles() {
-    return <Global styles = {globalStyles} />
+  return <Global styles={globalStyles} />
 }
 
 export default GlobalStyles

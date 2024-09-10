@@ -1,14 +1,20 @@
-import Menu from '../Menu/Menu'
-import { FirstName, HeaderComponent, LastName, Logo } from './styles'
+import MorphingMenu from '../MorphingMenu/MorphingMenu'
+import { FirstName, HeaderComponent, LastName, Logo, LogoLink } from './styles'
 
-function Header() {
+interface HeaderProps {
+  onMenuToggle: (isOpen: boolean) => void;
+}
+
+function Header({ onMenuToggle }: HeaderProps) {
   return (
     <HeaderComponent>
-      <Logo>
-        <LastName>Gudz</LastName>
-        <FirstName>Andrii</FirstName>
-      </Logo>
-      <Menu />
+      <LogoLink to="/">
+        <Logo>
+          <LastName>Gudz</LastName>
+          <FirstName>Andrii</FirstName>
+        </Logo>
+      </LogoLink>
+      <MorphingMenu onMenuToggle={onMenuToggle} />
     </HeaderComponent>
   )
 }

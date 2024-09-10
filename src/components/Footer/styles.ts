@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import { Link } from 'react-router-dom'
 
 export const FooterComponent = styled.div`
   width: 100%;
@@ -6,6 +7,17 @@ export const FooterComponent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`
+
+// Ссылка на сайт
+export const CopyrightLink = styled(Link)`
+  text-decoration: none;
+  color: #1A1A1A;
+
+  &:hover {
+    text-decoration: underline;
+    color: #B4AEA8;
+  }
 `
 
 export const Copyright = styled.div`
