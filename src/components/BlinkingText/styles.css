@@ -7,7 +7,7 @@
 }
 
 .blinking-text {
-    font-size: 32px;
-    font-weight: bold;
+    /* font-size: 32px; */
+    /* font-weight: bold; */
     animation: blinkingText 3s infinite;
 }
