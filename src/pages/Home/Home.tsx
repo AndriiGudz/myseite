@@ -18,7 +18,7 @@ function Home() {
           <p>Now, I want to apply my diverse experience to a new role as a Frontend Developer.</p>
         </DescriptionBox>
       </FirstBlock>
-      {/* <Button name="Resume" /> */}
+      <Button name="Resume" />
     </PageBox>
   )
 }
