@@ -1,4 +1,27 @@
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/react'
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Сдвиг вниз для эффекта плавного появления */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
+const slideInLeft = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
 
 export const PageBox = styled.div`
   margin-top: 102px;
@@ -9,7 +32,6 @@ export const PageBox = styled.div`
   gap: 52px;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
-
   }
 `
 
@@ -54,6 +76,17 @@ export const DescriptionBox = styled.div`
   text-align: justify;
   left: 24px;
   bottom: 62px;
+  opacity: 0; /* Изначально скрыт */
+  transform: translateY(20px); /* Изначально сдвинут вниз */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Переход для плавного появления */
+
+  /* Класс, который будет добавляться при видимости */
+  &.visible {
+    opacity: 1;
+    transform: translateY(0); /* Анимация появления */
+  }
+
+  // animation: ${fadeIn} 2s ease-in-out;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     align-items: center;
@@ -131,11 +164,11 @@ export const TitleHome1 = styled.span`
     left: 20px;
 
     &::after {
-    width: 200px; /* Длина линии */
-    height: 18px; /* Толщина линии */
-    left: -24px; /* Расположить линию внизу */
-    bottom: 4px; /* Небольшой отступ под текстом */
-  }
+      width: 200px; /* Длина линии */
+      height: 18px; /* Толщина линии */
+      left: -24px; /* Расположить линию внизу */
+      bottom: 4px; /* Небольшой отступ под текстом */
+    }
   }
 `
 export const TitleHome2 = styled.span`
@@ -163,10 +196,90 @@ export const TitleHome2 = styled.span`
     font-size: 24px;
 
     &::after {
-    width: 200px; /* Длина линии */
-    height: 18px; /* Толщина линии */
-    left: 72px; /* Расположить линию внизу */
-    bottom: 4px; /* Небольшой отступ под текстом */
+      width: 200px; /* Длина линии */
+      height: 18px; /* Толщина линии */
+      left: 72px; /* Расположить линию внизу */
+      bottom: 4px; /* Небольшой отступ под текстом */
+    }
   }
+`
+
+export const ContactBlock = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 152px 0;
+
+  @media (max-width: 600px) {
+    padding: 52px 0;
+  }
+`
+
+export const ContactBox = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 650px;
+  height: 160px;
+  flex-shrink: 0;
+  background: var(--Bg-1, #d6ccc2);
+
+  @media screen and (min-width: 600px) and (max-width: 1050px) {
+    width: 382px;
+    height: 142px;
+  }
+
+  @media (max-width: 600px) {
+    width: 240px;
+    height: 74px;
+  }
+`
+export const ContactMessage = styled.p`
+  width: 440px;
+  color: var(--Color-Black, #1a1a1a);
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  padding-right: 52px;
+  opacity: 0; /* Изначально скрыт */
+  transform: translateX(-100px); /* Изначально сдвинут влево */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Переход для плавного появления */
+
+  /* Класс, который будет добавляться при видимости */
+  &.visible {
+    opacity: 1;
+    transform: translateX(0); /* Анимация появления */
+  }
+
+  animation: ${slideInLeft} 1.5s ease-out;
+
+  @media screen and (min-width: 600px) and (max-width: 1050px) {
+    width: 282px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    padding-right: 24px;
+  }
+
+  @media (max-width: 600px) {
+    width: 200px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    padding-right: 10px;
+  }
+`
+export const BtnContact = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+
   }
 `

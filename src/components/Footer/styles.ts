@@ -9,14 +9,13 @@ export const FooterComponent = styled.div`
   justify-content: space-between;
 `
 
-// Ссылка на сайт
 export const CopyrightLink = styled(Link)`
   text-decoration: none;
-  color: #1A1A1A;
+  color: #1a1a1a;
 
   &:hover {
     text-decoration: underline;
-    color: #B4AEA8;
+    color: #b4aea8;
   }
 `
 
@@ -24,7 +23,6 @@ export const Copyright = styled.div`
   font-size: 12px;
   margin-left: 30px;
   letter-spacing: 0.05em; /* 5% от размера шрифта */
-  
 
   @media (max-width: 600px) {
     font-size: 8px;
@@ -32,11 +30,29 @@ export const Copyright = styled.div`
   }
 `
 
+export const LinkedInLink = styled(Link)`
+  text-decoration: none;
+  color: #1a1a1a;
+
+  &:hover {
+    text-decoration: none;
+    color: #b4aea8;
+  }
+
+  .linkedin-icon {
+    font-size: 42px;
+
+    @media (max-width: 600px) {
+      font-size: inherit;
+    }
+  }
+`
+
 export const Created = styled.div`
   font-size: 12px;
   margin-right: 30px;
   letter-spacing: 0.05em; /* 5% от размера шрифта */
-  
+
   @media (max-width: 600px) {
     font-size: 8px;
     margin-left: 20px;
