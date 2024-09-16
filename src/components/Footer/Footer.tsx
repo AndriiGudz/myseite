@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import {FooterComponent, Copyright, Created, CopyrightLink, LinkedInLink} from './styles'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Footer() {
+    const { t } = useTranslation();
     var year = new Date().getFullYear();
 
     return (
@@ -16,7 +18,7 @@ function Footer() {
             >
                 <LinkedInIcon className="linkedin-icon" />
             </LinkedInLink>
-            <Created>Designed and Developed by me.</Created>
+            <Created>{t(`created`)}</Created>
         </FooterComponent>
     )
 }

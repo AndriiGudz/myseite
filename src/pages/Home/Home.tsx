@@ -16,8 +16,11 @@ import {
   TitleSmall,
 } from './styles'
 import myPhoto from '../../assets/my-foto-1.webp'
+import { useTranslation } from 'react-i18next'; // Импортируем хук для перевода
 
 function Home() {
+  const { t } = useTranslation(); // Используем хук для доступа к переводам
+
   const descriptionRef = useRef(null); // Используем useRef для DescriptionBox
   const contactRef = useRef(null); // Используем useRef для ContactMessage
 
@@ -59,36 +62,31 @@ function Home() {
       <FirstBlock>
         <Title>
           <TitleSmall>
-            <BlinkingText text="Junior" />
+            <BlinkingText text={t('titleSmall')} /> {/* Перевод текста */}
           </TitleSmall>
-          <TitleHome1>Frontend</TitleHome1>
-          <TitleHome2>Developer</TitleHome2>
+          <TitleHome1>{t('titleHome1')}</TitleHome1> {/* Перевод текста */}
+          <TitleHome2>{t('titleHome2')}</TitleHome2> {/* Перевод текста */}
         </Title>
         <MyPhoto src={myPhoto} alt="Gudz Andrii" />
         <DescriptionBox ref={descriptionRef}>
-          <p>
-            I am a professional with experience in project management, internet
-            marketing, and IT consulting. Currently, I am in a career transition
-            phase, having completed a Full-Stack development course.
-          </p>
-          <p>
-            Now, I want to apply my diverse experience to a new role as a
-            Frontend Developer.
-          </p>
+          <p>{t('description1')}</p> {/* Перевод текста */}
+          <p>{t('description2')}</p> {/* Перевод текста */}
         </DescriptionBox>
       </FirstBlock>
+      
       <a href="/path/to/resume.pdf">
-      <Button name="Resume" />
+        <Button name={t('resume')} /> {/* Перевод текста */}
       </a>
+      
       <ContactBlock>
         <ContactBox>
           <ContactMessage ref={contactRef}>
-            Please write to me if you have any questions or job offers for me.
+            {t('contactMessage')} {/* Перевод текста */}
           </ContactMessage>
         </ContactBox>
         <BtnContact>
-        <a href="mailto:andreygudz.de@gmail.com">
-          <Button name="Get in touch" />
+          <a href="mailto:andreygudz.de@gmail.com">
+            <Button name={t('getInTouch')} /> {/* Перевод текста */}
           </a>
         </BtnContact>
       </ContactBlock>
@@ -96,4 +94,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Home;

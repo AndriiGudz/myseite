@@ -43,3 +43,31 @@ export const LastName = styled.span`
 export const FirstName = styled.span`
   color: #b4aea8;
 `
+
+export const NavBar = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 24px;
+`
+
+// Добавляем стили для выпадающего списка языка
+export const LanguageSwitcher = styled.select`
+  padding: 5px 10px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #1a1a1a;
+
+  &:focus {
+    outline: none;
+    border-color: #b4aea8;
+  }
+
+  option {
+    background-color: #fff;
+    color: #1a1a1a;
+  }
+`;

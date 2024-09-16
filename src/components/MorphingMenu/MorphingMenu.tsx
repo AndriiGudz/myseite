@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './MorphingMenu.css'
+import { useTranslation } from 'react-i18next';
 
 interface MorphingMenuProps {
   onMenuToggle: (isOpen: boolean) => void;
@@ -7,6 +8,7 @@ interface MorphingMenuProps {
 
 function MorphingMenu({ onMenuToggle }: MorphingMenuProps) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     const newState = !isOpen
@@ -24,9 +26,8 @@ function MorphingMenu({ onMenuToggle }: MorphingMenuProps) {
       </label>
       <nav className={`menu ${isOpen ? 'visible' : ''}`}>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="/">{t(`home`)}</a></li>
+          <li><a href="#about">{t(`resume`)}</a></li>
         </ul>
       </nav>
     </div>
