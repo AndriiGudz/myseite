@@ -60,7 +60,7 @@ function Home() {
         observer.unobserve(currentContactRef);
       }
     };
-  }, [handleIntersection]); // Добавление handleIntersection в зависимости useEffect
+  }, []);
 
   return (
     <PageBox>
