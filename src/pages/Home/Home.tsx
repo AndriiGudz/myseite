@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react'
-import BlinkingText from '../../components/BlinkingText/BlinkingText'
-import Button from '../../components/Button/Button'
+import { useEffect, useRef, useCallback } from 'react';
+import BlinkingText from '../../components/BlinkingText/BlinkingText';
+import Button from '../../components/Button/Button';
 import {
   BtnContact,
   ContactBlock,
@@ -14,15 +14,16 @@ import {
   TitleHome1,
   TitleHome2,
   TitleSmall,
-} from './styles'
-import myPhoto from '../../assets/my-foto-1.webp'
+} from './styles';
+import myPhoto from '../../assets/my-foto-1.webp';
 import { useTranslation } from 'react-i18next'; // Импортируем хук для перевода
 
 function Home() {
   const { t } = useTranslation(); // Используем хук для доступа к переводам
 
-  const descriptionRef = useRef(null); // Используем useRef для DescriptionBox
-  const contactRef = useRef(null); // Используем useRef для ContactMessage
+  // Используем useCallback, чтобы гарантировать стабильность функции и избежать ESLint ошибок
+  const descriptionRef = useRef<HTMLDivElement | null>(null); 
+  const contactRef = useRef<HTMLParagraphElement | null>(null); 
 
   useEffect(() => {
     const currentDescriptionRef = descriptionRef.current;
@@ -49,6 +50,7 @@ function Home() {
       observer.observe(currentContactRef);
     }
 
+    // Функция очистки при размонтировании компонента
     return () => {
       if (currentDescriptionRef) {
         observer.unobserve(currentDescriptionRef);
@@ -58,7 +60,7 @@ function Home() {
         observer.unobserve(currentContactRef);
       }
     };
-  }, []);
+  }, [handleIntersection]); // Добавление handleIntersection в зависимости useEffect
 
   return (
     <PageBox>
@@ -76,11 +78,11 @@ function Home() {
           <p>{t('description2')}</p> {/* Перевод текста */}
         </DescriptionBox>
       </FirstBlock>
-      
+
       <a href="/resume">
         <Button name={t('resume')} /> {/* Перевод текста */}
       </a>
-      
+
       <ContactBlock>
         <ContactBox>
           <ContactMessage ref={contactRef}>
@@ -94,7 +96,7 @@ function Home() {
         </BtnContact>
       </ContactBlock>
     </PageBox>
-  )
+  );
 }
 
 export default Home;
