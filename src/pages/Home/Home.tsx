@@ -25,6 +25,9 @@ function Home() {
   const contactRef = useRef(null); // Используем useRef для ContactMessage
 
   useEffect(() => {
+    const currentDescriptionRef = descriptionRef.current;
+    const currentContactRef = contactRef.current;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -38,21 +41,21 @@ function Home() {
       }
     );
 
-    if (descriptionRef.current) {
-      observer.observe(descriptionRef.current);
+    if (currentDescriptionRef) {
+      observer.observe(currentDescriptionRef);
     }
 
-    if (contactRef.current) {
-      observer.observe(contactRef.current);
+    if (currentContactRef) {
+      observer.observe(currentContactRef);
     }
 
     return () => {
-      if (descriptionRef.current) {
-        observer.unobserve(descriptionRef.current);
+      if (currentDescriptionRef) {
+        observer.unobserve(currentDescriptionRef);
       }
 
-      if (contactRef.current) {
-        observer.unobserve(contactRef.current);
+      if (currentContactRef) {
+        observer.unobserve(currentContactRef);
       }
     };
   }, []);
