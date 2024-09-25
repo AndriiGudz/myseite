@@ -1,12 +1,21 @@
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import GlobalStyles from './styles/GlobalStyles'
-import BlinkingText from './components/BlinkingText/BlinkingText'
+import Home from './pages/Home/Home'
+import Layout from './components/Layout/Layout'
+import './i18n';
+import ResumePage from './pages/ResumePage/ResumePage';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <BlinkingText />
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<ResumePage />} />
+        </Routes>
+      </Layout>
     </BrowserRouter>
   )
 }

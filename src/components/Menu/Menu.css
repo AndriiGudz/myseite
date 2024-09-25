@@ -1,0 +1,60 @@
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+label span {
+  background: #000;
+  border-radius: 10px;
+  height: 4px;
+  margin: 5px 0;
+  transition: transform 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6), width 0.4s ease;
+}
+
+span:nth-of-type(1) {
+  width: 100%;
+}
+
+span:nth-of-type(2) {
+  width: 80%;
+}
+
+span:nth-of-type(3) {
+  width: 60%;
+}
+
+/* Эффект при наведении */
+label:hover span:nth-of-type(2) {
+  width: 100%; /* Увеличиваем ширину */
+}
+
+label:hover span:nth-of-type(3) {
+  width: 100%; /* Увеличиваем ширину */
+}
+
+/* Скрываем чекбокс */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Превращение в крестик */
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: left;
+  width: 75%;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  opacity: 0; /* Прячем центральную полоску */
+  transition: 0.2s ease-out;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  transform-origin: left;
+  width: 75%;
+}

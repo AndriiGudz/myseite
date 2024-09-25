@@ -1,7 +1,8 @@
 import {BlinkingTextComponent} from './styles'
+import { BlinkingTextProps } from './types'
 
-function BlinkingText() {
-  return <BlinkingTextComponent>My React-TS project</BlinkingTextComponent>
+function BlinkingText({text}: BlinkingTextProps) {
+  return <BlinkingTextComponent>{text}</BlinkingTextComponent>
 }
 
 export default BlinkingText

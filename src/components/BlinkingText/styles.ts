@@ -11,7 +11,7 @@ const blinkingText = keyframes`
 `
 
 export const BlinkingTextComponent = styled.div`
-  font-size: 32px;
-  font-weight: bold;
+  /* font-size: 32px; */
+  /* font-weight: bold; */
   animation: ${blinkingText} 3s infinite;
 `
