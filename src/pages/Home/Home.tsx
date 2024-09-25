@@ -74,7 +74,7 @@ function Home() {
         </DescriptionBox>
       </FirstBlock>
       
-      <a href="/path/to/resume.pdf">
+      <a href="/resume">
         <Button name={t('resume')} /> {/* Перевод текста */}
       </a>
       

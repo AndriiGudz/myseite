@@ -3,6 +3,7 @@ import GlobalStyles from './styles/GlobalStyles'
 import Home from './pages/Home/Home'
 import Layout from './components/Layout/Layout'
 import './i18n';
+import ResumePage from './pages/ResumePage/ResumePage';
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<ResumePage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
