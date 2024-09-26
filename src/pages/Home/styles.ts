@@ -96,7 +96,7 @@ export const DescriptionBox = styled.div`
   @media (max-width: 600px) {
     position: initial;
     width: 300px;
-    font-size: 12px;
+    font-size: 16px;
     gap: 12px;
   }
 `
