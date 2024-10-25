@@ -75,7 +75,7 @@ export const DescriptionBox = styled.div`
   font-weight: 300;
   text-align: justify;
   left: 24px;
-  bottom: 62px;
+  bottom: 148px;
   opacity: 0; /* Изначально скрыт */
   transform: translateY(20px); /* Изначально сдвинут вниз */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Переход для плавного появления */
