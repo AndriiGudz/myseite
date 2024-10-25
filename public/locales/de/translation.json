@@ -1,15 +1,15 @@
 {
-    "titleSmall": "Junior",
-    "titleHome1": "Frontend",
-    "titleHome2": "Entwickler",
-    "description1": "Ich bin ein Fachmann mit Erfahrung in Projektmanagement, Internet-Marketing und IT-Beratung. Derzeit befinde ich mich in einer beruflichen Übergangsphase, nachdem ich einen Kurs in Full-Stack-Entwicklung abgeschlossen habe.",
-    "description2": "Jetzt möchte ich meine vielfältigen Erfahrungen in einer neuen Rolle als Frontend-Entwickler anwenden.",
-    "home": "Homepage",
-    "resume": "Lebenslauf",
-    "getInTouch": "Kontakt aufnehmen",
-    "contactMessage": "Bitte schreiben Sie mir, wenn Sie Fragen oder Jobangebote für mich haben.",
-    "created": "Von mir entworfen und entwickelt.",
-    "resumePage": {
+  "titleSmall": "Junior",
+  "titleHome1": "Frontend",
+  "titleHome2": "Entwickler",
+  "description1": "Ich bin ein Fachmann mit Erfahrung in Projektmanagement, Internet-Marketing und IT-Beratung. Derzeit befinde ich mich in einer beruflichen Übergangsphase, nachdem ich einen Kurs in Full-Stack-Entwicklung abgeschlossen habe.",
+  "description2": "Jetzt möchte ich meine vielfältigen Erfahrungen in einer neuen Rolle als Frontend-Entwickler anwenden.",
+  "home": "Homepage",
+  "resume": "Lebenslauf",
+  "getInTouch": "Kontakt aufnehmen",
+  "contactMessage": "Bitte schreiben Sie mir, wenn Sie Fragen oder Jobangebote für mich haben.",
+  "created": "Von mir entworfen und entwickelt.",
+  "resumePage": {
     "contDetal": "Kontaktdaten",
     "address1": "Marktplatz, 15. Baunach, 96148",
     "phone1": "+4915156548401",
@@ -47,13 +47,13 @@
     "etc": "usw",
     "subTitleh2": "Junior Frontend-Entwickler",
     "profExp": "Berufserfahrung",
-    "intern": "Internship as Frontend Developer",
-    "ait": "AIT TR GmbH, Berlin, Germany",
+    "intern": "Praktikum als Frontend-Entwickler",
+    "ait": "AIT TR GmbH, Berlin, Deutschland",
     "aitY": "09/2024 - 10/2024",
-    "intCreat": "Creation of layouts for the restaurant's homepage and menu page",
-    "intImpl": "Implementation of desktop and mobile layouts for the menu page using React",
-    "intDev": "Development of reusable components such as dish cards, photo gallery sliders, category sliders, and modal cards",
-    "intCollab": "Collaboration with the team via GitHub (pull requests, branches, code reviews) and task management using Jira and Kanban",
+    "intCreat": "Erstellung von Layouts für die Startseite und die Menüseite des Restaurants",
+    "intImpl": "Implementierung von Desktop- und mobilen Layouts der Menüseite mit React",
+    "intDev": "Entwicklung von wiederverwendbaren Komponenten wie Gerichtskarten, Fotogalerie-Slidern, Kategorien-Slidern und Modalkarten",
+    "intCollab": "Zusammenarbeit mit dem Team über GitHub (Pull Requests, Branches, Code Reviews) und Verwaltung von Aufgaben über Jira und Kanban",
     "prjMan": "Projektmanager / Frontend-Entwicklungsabteilung",
     "simb": "Simbioz Holding GmbH, Kyiv, Ukraine",
     "simbY": "02/2016 - 02/2023",
@@ -93,5 +93,4 @@
     "btnResEng": "Lebenslauf .pdf auf Englisch",
     "btnResGer": "Lebenslauf .pdf auf Deutsch"
   }
-  }
-  
+}
