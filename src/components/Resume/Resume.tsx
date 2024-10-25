@@ -119,11 +119,11 @@ function Resume() {
           </IconDatum>
           <IconDatum>
             <LinkedInIcon />
-            <p><a href="https://www.linkedin.com/in/andriigudz/" target='_blank'>{t(`resumePage.linkedin`)}</a></p>
+            <p><a href="https://www.linkedin.com/in/andriigudz/" target='_blank' rel="noopener noreferrer">{t(`resumePage.linkedin`)}</a></p>
           </IconDatum>
           <IconDatum>
             <PublicIcon />
-            <p><a href="https://gudz-andrii.com/" target='_blank'>{t(`resumePage.public`)}</a></p>
+            <p><a href="https://gudz-andrii.com/" target='_blank' rel="noopener noreferrer">{t(`resumePage.public`)}</a></p>
           </IconDatum>
           <IconDatum>
             <PersonIcon />
