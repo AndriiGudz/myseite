@@ -3,7 +3,7 @@ import { Global, css } from '@emotion/react'
 const globalStyles = css`
   @import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 
-  * {
+  *, *::before, *::after {
     box-sizing: border-box;
   }
 

@@ -12,6 +12,17 @@ const fadeIn = keyframes`
   }
 `
 
+const slideInRight = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`
+
 const slideInLeft = keyframes`
   0% {
     opacity: 0;
@@ -41,11 +52,13 @@ export const FirstBlock = styled.div`
   align-items: flex-end;
   position: relative;
   min-width: 988px;
+  margin-top: 42px;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     min-width: 0;
     align-items: center;
     position: initial;
+    margin-top: 0;
     gap: 32px;
   }
 
@@ -53,12 +66,14 @@ export const FirstBlock = styled.div`
     min-width: 0;
     align-items: center;
     position: initial;
+    margin-top: 0;
     gap: 30px;
   }
 `
 
 export const MyPhoto = styled.img`
   width: 500px;
+  border-radius: 4px;
 
   @media (max-width: 600px) {
     width: 300px;
@@ -74,7 +89,7 @@ export const DescriptionBox = styled.div`
   font-size: 20px;
   font-weight: 300;
   text-align: justify;
-  left: 24px;
+  left: -28px;
   bottom: 62px;
   opacity: 0; /* Изначально скрыт */
   transform: translateY(20px); /* Изначально сдвинут вниз */
@@ -203,16 +218,146 @@ export const TitleHome2 = styled.span`
     }
   }
 `
+// PortfolioBlock
+export const PortfolioBlock = styled.div`
+  display: flex;
+  flex-wrap: wrap;           /* позволяем переносить при нехватке места */
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 102px 0;
+  box-sizing: border-box;    /* учитываем padding в ширине */
+  min-width: 0;              /* важно, чтобы дети ужимались */
 
+  @media (min-width: 600px) and (max-width: 1050px) {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    /* align-items: flex-end; */
+    align-items: center;
+    gap: 32px;
+    padding: 32px 0;
+  }
+`
+
+export const PortfolioDeescriptionBtn = styled.div`
+  flex: 1 1 0;               /* займёт доступное место, но может ужаться */
+  min-width: 0;              /* предотвратить overflow по контенту */
+  /* max-width: 400px;          максимальная ширина */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  box-sizing: border-box;
+`
+
+export const PortfolioDescription = styled.div`
+  width: auto;
+  max-width: 400px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: ${fadeIn} 0.8s ease-out;
+  }
+
+  @media (min-width: 600px) and (max-width: 1050px) {
+    padding: 0 24px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+    gap: 12px;
+    max-width: 300px;
+  }
+`
+
+export const PortfolioBox = styled.div`
+  flex: 0 1 auto;            /* по содержимому, но может ужаться */
+  min-width: 0;              /* чтобы не вылазило */
+  max-width: 650px;          /* максимальная ширина */
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  background: var(--Bg-1, #d6ccc2);
+  border-radius: 4px 0 0 4px;
+  box-sizing: border-box;
+
+  @media (min-width: 600px) and (max-width: 1050px) {
+    max-width: 382px;
+    height: 142px;
+  }
+
+  @media (max-width: 600px) {
+    align-self: flex-start;
+    border-radius: 0 4px 4px 0;
+    max-width: 240px;
+    height: 74px;
+  }
+`
+
+export const PortfolioMessage = styled.div`
+  flex: 1 1 0;               /* займёт всё внутри PortfolioBox */
+  min-width: 0;              /* чтобы текст ужимался */
+  max-width: 440px;
+  width: 100%;
+  padding-left: 52px;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 3.3px;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  &.visible {
+    opacity: 1;
+    transform: translateX(0);
+    animation: ${slideInRight} 1s ease-out;
+  }
+
+  @media (min-width: 600px) and (max-width: 1050px) {
+    max-width: 282px;
+    font-size: 16px;
+    letter-spacing: 1.8px;
+    padding-left: 32px;
+  }
+
+  @media (max-width: 600px) {
+    max-width: 200px;
+    font-size: 12px;
+    letter-spacing: 1.8px;
+    padding-left: 10px;
+  }
+`
+
+// ContactBlock
 export const ContactBlock = styled.div`
   display: flex;
   width: 100%;
   justify-content: flex-start;
   align-items: center;
-  padding: 152px 0;
+  padding: 102px 0;
 
   @media (max-width: 600px) {
-    padding: 52px 0;
+    padding: 0 0 52px 0;
   }
 `
 
@@ -224,6 +369,7 @@ export const ContactBox = styled.div`
   height: 160px;
   flex-shrink: 0;
   background: var(--Bg-1, #d6ccc2);
+  border-radius: 0 4px 4px 0;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     width: 382px;
@@ -261,7 +407,6 @@ export const ContactMessage = styled.p`
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     width: 282px;
     font-size: 16px;
-    font-weight: 600;
     letter-spacing: 1.8px;
     padding-right: 24px;
   }
@@ -269,7 +414,6 @@ export const ContactMessage = styled.p`
   @media (max-width: 600px) {
     width: 200px;
     font-size: 12px;
-    font-weight: 500;
     letter-spacing: 1.8px;
     padding-right: 10px;
   }
@@ -280,6 +424,5 @@ export const BtnContact = styled.div`
   justify-content: center;
 
   @media (max-width: 600px) {
-
   }
 `

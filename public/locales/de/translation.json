@@ -1,15 +1,18 @@
 {
-    "titleSmall": "Junior",
-    "titleHome1": "Frontend",
-    "titleHome2": "Entwickler",
-    "description1": "Ich bin ein Fachmann mit Erfahrung in Projektmanagement, Internet-Marketing und IT-Beratung. Derzeit befinde ich mich in einer beruflichen Übergangsphase, nachdem ich einen Kurs in Full-Stack-Entwicklung abgeschlossen habe.",
-    "description2": "Jetzt möchte ich meine vielfältigen Erfahrungen in einer neuen Rolle als Frontend-Entwickler anwenden.",
-    "home": "Homepage",
-    "resume": "Lebenslauf",
-    "getInTouch": "Kontakt aufnehmen",
-    "contactMessage": "Bitte schreiben Sie mir, wenn Sie Fragen oder Jobangebote für mich haben.",
-    "created": "Von mir entworfen und entwickelt.",
-    "resumePage": {
+  "titleSmall": "Junior",
+  "titleHome1": "Frontend",
+  "titleHome2": "Entwickler",
+  "description1": "Ich bin ein Fachmann mit Erfahrung in Projektmanagement, Internet-Marketing und IT-Beratung. Derzeit befinde ich mich in einer beruflichen Übergangsphase, nachdem ich einen Kurs in Full-Stack-Entwicklung abgeschlossen habe.",
+  "description2": "Jetzt möchte ich meine vielfältigen Erfahrungen in einer neuen Rolle als Frontend-Entwickler anwenden.",
+  "home": "Homepage",
+  "resume": "Lebenslauf",
+  "portfolio": "Portfolio",
+  "portfolioDesc": "Ich entwickle moderne Benutzeroberflächen mit Fokus auf Benutzerfreundlichkeit, Responsivität und sauberer Architektur. Dabei arbeite ich sowohl am Erscheinungsbild als auch an der Logik – von React-Komponenten bis zur API-Integration.",
+  "portfolioMessage": "Frontend- & Fullstack-Projekte, die ich umsetze",
+  "getInTouch": "Kontakt aufnehmen",
+  "contactMessage": "Bitte schreiben Sie mir, wenn Sie Fragen oder Jobangebote für mich haben.",
+  "created": "Von mir entworfen und entwickelt.",
+  "resumePage": {
     "contDetal": "Kontaktdaten",
     "address1": "Marktplatz, 15. Baunach, 96148",
     "phone1": "+4915156548401",
@@ -83,6 +86,13 @@
     "integCr": "Integrationskurs DTZ B1, Euroschule Bamberg",
     "btnResEng": "Lebenslauf .pdf auf Englisch",
     "btnResGer": "Lebenslauf .pdf auf Deutsch"
+  },
+  "portfolioPage": {
+    "portfolioTitle": "Mein Portfolio",
+    "portfolioSubtitle": "Ich entwickle gerne Benutzeroberflächen, die angenehm und einfach zu bedienen sind. Unten findest du Projekte oder einzelne Komponenten, die ich entwickelt habe – sie sind Teil meines beruflichen Weges.",
+    "itemTitle1": "Slider für die Startseite einer Tierfotografin.",
+    "itemDescription1": "Responsive Slider-Umsetzung mit individuellem Design basierend auf Figma-Layouts für eine WordPress-Website. Der Slider wurde mit Swiper.js über ein CDN integriert, ohne lokale Dateien ins Projekt einzubinden. Jeder Slide enthält ein Hintergrundbild sowie eine anpassbare Hintergrundfarbe oder einen Verlauf – beides ist über das WordPress-Admin-Panel in der Helium-Theme konfigurierbar.",
+    "itemTitle2": "Seite für Login und Registrierung.",
+    "itemDescription2": "Responsives Authentifizierungs-Interface mit umschaltbaren Ansichten für Login und Registrierung, entwickelt mit React (Frontend) und Java (Backend). Integriert mit einem REST-API zur Benutzeranmeldung und -registrierung. Reibungsloser Wechsel zwischen den Formularen ohne Seiten-Neuladen. Formik wurde zur Verwaltung des Formularzustands und zur clientseitigen Validierung mit benutzerfreundlicher Fehlermeldung verwendet. Vorbereitet für sichere tokenbasierte Authentifizierung."
   }
-  }
-  
+}

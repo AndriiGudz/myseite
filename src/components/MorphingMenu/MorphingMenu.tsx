@@ -27,6 +27,7 @@ function MorphingMenu({ onMenuToggle }: MorphingMenuProps) {
       <nav className={`menu ${isOpen ? 'visible' : ''}`}>
         <ul>
           <li><a href="/">{t(`home`)}</a></li>
+          <li><a href="/portfolio">{t(`portfolio`)}</a></li>
           <li><a href="/resume">{t(`resume`)}</a></li>
         </ul>
       </nav>

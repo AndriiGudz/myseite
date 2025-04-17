@@ -4,6 +4,7 @@ import Home from './pages/Home/Home'
 import Layout from './components/Layout/Layout'
 import './i18n';
 import ResumePage from './pages/ResumePage/ResumePage';
+import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<ResumePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
