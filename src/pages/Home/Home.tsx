@@ -1,3 +1,4 @@
+// src/pages/Home/Home.tsx
 import { useEffect, useRef, useCallback } from 'react'
 import BlinkingText from '../../components/BlinkingText/BlinkingText'
 import Button from '../../components/Button/Button'
@@ -24,21 +25,20 @@ import myPhoto from '../../assets/my-foto-1.webp'
 import { useTranslation } from 'react-i18next'
 
 function Home() {
-  const { t } = useTranslation() // Используем хук для доступа к переводам
+  const { t } = useTranslation()
 
-  // Используем useCallback, чтобы гарантировать стабильность функции и избежать ESLint ошибок
   const descriptionRef = useRef<HTMLDivElement | null>(null)
   const portfolioDescriptionRef = useRef<HTMLDivElement | null>(null)
-  const contactRef = useRef<HTMLParagraphElement | null>(null)
   const portfoliotRef = useRef<HTMLParagraphElement | null>(null)
+  const contactRef = useRef<HTMLParagraphElement | null>(null)
 
   const handleIntersection = useCallback(
     (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('visible') // Добавляем класс при видимости
+          entry.target.classList.add('visible')
         } else {
-          entry.target.classList.remove('visible') // Убираем класс, если элемент не виден
+          entry.target.classList.remove('visible')
         }
       })
     },
@@ -47,67 +47,50 @@ function Home() {
 
   useEffect(() => {
     const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.1, // Сработает, когда 10% элемента будет видимым
+      threshold: 0.1,
     })
 
-    if (descriptionRef.current) {
-      observer.observe(descriptionRef.current)
-    }
+    // Сохраняем все current в локальные переменные сразу
+    const descEl = descriptionRef.current
+    const portDescEl = portfolioDescriptionRef.current
+    const portEl = portfoliotRef.current
+    const contEl = contactRef.current
 
-    if (portfolioDescriptionRef.current) {
-      observer.observe(portfolioDescriptionRef.current)
-    }
+    if (descEl)       observer.observe(descEl)
+    if (portDescEl)   observer.observe(portDescEl)
+    if (portEl)       observer.observe(portEl)
+    if (contEl)       observer.observe(contEl)
 
-    if (portfoliotRef.current) {
-      observer.observe(portfoliotRef.current)
-    }
-
-    if (contactRef.current) {
-      observer.observe(contactRef.current)
-    }
-
-    // Функция очистки при размонтировании компонента
     return () => {
-      if (descriptionRef.current) {
-        observer.unobserve(descriptionRef.current)
-      }
-
-      if (portfolioDescriptionRef.current) {
-        observer.unobserve(portfolioDescriptionRef.current)
-      }
-
-      if (portfoliotRef.current) {
-        observer.unobserve(portfoliotRef.current)
-      }
-
-      if (contactRef.current) {
-        observer.unobserve(contactRef.current)
-      }
+      // При анмаунте снимаем наблюдателя с тех же самых элементов
+      if (descEl)       observer.unobserve(descEl)
+      if (portDescEl)   observer.unobserve(portDescEl)
+      if (portEl)       observer.unobserve(portEl)
+      if (contEl)       observer.unobserve(contEl)
     }
-  }, [handleIntersection]) // Добавление handleIntersection в зависимости useEffect
+  }, [handleIntersection])
 
   return (
     <PageBox>
       <FirstBlock>
         <Title>
           <TitleSmall>
-            <BlinkingText text={t('titleSmall')} /> {/* Перевод текста */}
+            <BlinkingText text={t('titleSmall')} />
           </TitleSmall>
-          <TitleHome1>{t('titleHome1')}</TitleHome1> {/* Перевод текста */}
-          <TitleHome2>{t('titleHome2')}</TitleHome2> {/* Перевод текста */}
+          <TitleHome1>{t('titleHome1')}</TitleHome1>
+          <TitleHome2>{t('titleHome2')}</TitleHome2>
         </Title>
         <MyPhoto src={myPhoto} alt="Gudz Andrii" />
         <DescriptionBox ref={descriptionRef}>
-          <p>{t('description1')}</p> {/* Перевод текста */}
-          <p>{t('description2')}</p> {/* Перевод текста */}
+          <p>{t('description1')}</p>
+          <p>{t('description2')}</p>
         </DescriptionBox>
       </FirstBlock>
 
       <a href="/resume">
-        <Button name={t('resume')} /> {/* Перевод текста */}
+        <Button name={t('resume')} />
       </a>
 
-      {/* Portfolio */}
       <PortfolioBlock>
         <PortfolioDeescriptionBtn>
           <PortfolioDescription ref={portfolioDescriptionRef}>
@@ -125,16 +108,15 @@ function Home() {
         </PortfolioBox>
       </PortfolioBlock>
 
-      {/* Contact */}
       <ContactBlock>
         <ContactBox>
           <ContactMessage ref={contactRef}>
-            {t('contactMessage')} {/* Перевод текста */}
+            {t('contactMessage')}
           </ContactMessage>
         </ContactBox>
         <BtnContact>
           <a href="mailto:andreygudz.de@gmail.com">
-            <Button name={t('getInTouch')} /> {/* Перевод текста */}
+            <Button name={t('getInTouch')} />
           </a>
         </BtnContact>
       </ContactBlock>
