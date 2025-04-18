@@ -105,5 +105,3 @@
     "itemDescription2": "Responsives Authentifizierungs-Interface mit umschaltbaren Ansichten für Login und Registrierung, entwickelt mit React (Frontend) und Java (Backend). Integriert mit einem REST-API zur Benutzeranmeldung und -registrierung. Reibungsloser Wechsel zwischen den Formularen ohne Seiten-Neuladen. Formik wurde zur Verwaltung des Formularzustands und zur clientseitigen Validierung mit benutzerfreundlicher Fehlermeldung verwendet. Vorbereitet für sichere tokenbasierte Authentifizierung."
   }
 }
-
-}

@@ -21,13 +21,9 @@ import {
   TitleSmall,
 } from './styles'
 import myPhoto from '../../assets/my-foto-1.webp'
-import { useTranslation } from 'react-i18next' // Импортируем хук для перевода
-} from './styles'
-import myPhoto from '../../assets/my-foto-1.webp'
-import { useTranslation } from 'react-i18next' // Импортируем хук для перевода
+import { useTranslation } from 'react-i18next'
 
 function Home() {
-  const { t } = useTranslation() // Используем хук для доступа к переводам
   const { t } = useTranslation() // Используем хук для доступа к переводам
 
   // Используем useCallback, чтобы гарантировать стабильность функции и избежать ESLint ошибок
@@ -144,8 +140,6 @@ function Home() {
       </ContactBlock>
     </PageBox>
   )
-  )
 }
 
-export default Home
 export default Home
