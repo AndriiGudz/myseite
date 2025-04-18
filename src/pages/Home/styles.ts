@@ -280,7 +280,7 @@ export const PortfolioDescription = styled.div`
   }
 
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 16px;
     gap: 12px;
     max-width: 300px;
   }
