@@ -11,11 +11,11 @@ function ResumePage() {
       <Resume />
       <BtnBoxResume>
         <a href="CV-Gudz-Andrii.pdf">
-      <Button name={t('resumePage.btnResEng')} />
-      </a>
-      <a href="Lebenslauf-Gudz-Andrii.pdf">
-      <Button name={t('resumePage.btnResGer')} />
-      </a>
+          <Button name={t('resumePage.btnResEng')} />
+        </a>
+        <a href="Lebenslauf-Gudz-Andrii.pdf">
+          <Button name={t('resumePage.btnResGer')} />
+        </a>
       </BtnBoxResume>
     </PageBox>
   )

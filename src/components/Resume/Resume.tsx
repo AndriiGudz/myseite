@@ -21,6 +21,8 @@ import HomeIcon from '@mui/icons-material/Home'
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
 import EmailIcon from '@mui/icons-material/Email'
 import PersonIcon from '@mui/icons-material/Person'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import PublicIcon from '@mui/icons-material/Public'
 
 function Resume() {
   const { t } = useTranslation()
@@ -37,6 +39,15 @@ function Resume() {
         <MyPhotoMedia src={myPhoto} alt="Gudz Andrii" />
         <RightContentBox>
             <TitleH3>{t(`resumePage.profExp`)}</TitleH3>
+            <ContentBox>
+                <TitleH5>{t(`resumePage.intern`)}</TitleH5>
+                <p><span>{t(`resumePage.ait`)}</span></p>
+                <p><span>{t(`resumePage.aitY`)}</span></p>
+                <li>{t(`resumePage.intCreat`)}</li>
+                <li>{t(`resumePage.intImpl`)}</li>
+                <li>{t(`resumePage.intDev`)}</li>
+                <li>{t(`resumePage.intCollab`)}</li>
+            </ContentBox>
             <ContentBox>
                 <TitleH5>{t(`resumePage.prjMan`)}</TitleH5>
                 <p><span>{t(`resumePage.simb`)}</span></p>
@@ -105,6 +116,14 @@ function Resume() {
           <IconDatum>
             <EmailIcon />
             <p>{t(`resumePage.email1`)}</p>
+          </IconDatum>
+          <IconDatum>
+            <LinkedInIcon />
+            <p><a href="https://www.linkedin.com/in/andriigudz/" target='_blank' rel="noopener noreferrer">{t(`resumePage.linkedin`)}</a></p>
+          </IconDatum>
+          <IconDatum>
+            <PublicIcon />
+            <p><a href="https://gudz-andrii.com/" target='_blank' rel="noopener noreferrer">{t(`resumePage.public`)}</a></p>
           </IconDatum>
           <IconDatum>
             <PersonIcon />

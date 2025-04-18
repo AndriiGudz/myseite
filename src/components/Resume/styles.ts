@@ -106,22 +106,20 @@ export const TitleH3 = styled.h3`
 `
 
 export const ContentBox = styled.div`
-display: flex;
-flex-direction: column;
-gap: 14px;
-font-size: 18px;
-padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 18px;
+  padding-top: 18px;
 
   p {
-
   }
 
   span {
-font-weight: bold;
+    font-weight: bold;
   }
 
   li {
-
   }
 
   @media (max-width: 600px) {
@@ -132,10 +130,10 @@ font-weight: bold;
 `
 
 export const TitleH5 = styled.h5`
-font-size: 21px;
-letter-spacing: 0.05rem;
+  font-size: 21px;
+  letter-spacing: 0.05rem;
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
     font-size: 18px;
   }
 `
@@ -155,7 +153,7 @@ export const MyPhoto = styled.img`
 `
 
 export const MyPhotoMedia = styled.img`
-display: none;
+  display: none;
   width: 100%;
 
   @media (max-width: 950px) {
@@ -175,8 +173,8 @@ export const LeftContentBox = styled.div`
     padding-bottom: 5px;
 
     @media (max-width: 600px) {
-    font-size: 14px;
-  }
+      font-size: 14px;
+    }
   }
 
   p {
@@ -218,6 +216,15 @@ export const IconDatum = styled.div`
   align-items: flex-start;
   font-size: 16px;
   gap: 22px;
+
+  a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 
   @media (max-width: 600px) {
     font-size: 14px;

@@ -17,6 +17,8 @@
     "address1": "Marktplatz, 15. Baunach, 96148",
     "phone1": "+4915156548401",
     "email1": "andreygudz.de@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/andriigudz/",
+    "public": "https://gudz-andrii.com/",
     "perDat1": "Geburtsdatum: ",
     "perDat11": "18.11.1980",
     "perDat2": "Geburtsort: ",
@@ -48,7 +50,14 @@
     "etc": "usw",
     "subTitleh2": "Junior Frontend-Entwickler",
     "profExp": "Berufserfahrung",
-    "prjMan": "Projektmanager / IT",
+    "intern": "Praktikum als Frontend-Entwickler",
+    "ait": "AIT TR GmbH, Berlin, Deutschland",
+    "aitY": "09/2024 - 10/2024",
+    "intCreat": "Erstellung von Layouts für die Startseite und die Menüseite des Restaurants",
+    "intImpl": "Implementierung von Desktop- und mobilen Layouts der Menüseite mit React",
+    "intDev": "Entwicklung von wiederverwendbaren Komponenten wie Gerichtskarten, Fotogalerie-Slidern, Kategorien-Slidern und Modalkarten",
+    "intCollab": "Zusammenarbeit mit dem Team über GitHub (Pull Requests, Branches, Code Reviews) und Verwaltung von Aufgaben über Jira und Kanban",
+    "prjMan": "Projektmanager / Frontend-Entwicklungsabteilung",
     "simb": "Simbioz Holding GmbH, Kyiv, Ukraine",
     "simbY": "02/2016 - 02/2023",
     "prPlan": "Projektplanung",
@@ -95,4 +104,6 @@
     "itemTitle2": "Seite für Login und Registrierung.",
     "itemDescription2": "Responsives Authentifizierungs-Interface mit umschaltbaren Ansichten für Login und Registrierung, entwickelt mit React (Frontend) und Java (Backend). Integriert mit einem REST-API zur Benutzeranmeldung und -registrierung. Reibungsloser Wechsel zwischen den Formularen ohne Seiten-Neuladen. Formik wurde zur Verwaltung des Formularzustands und zur clientseitigen Validierung mit benutzerfreundlicher Fehlermeldung verwendet. Vorbereitet für sichere tokenbasierte Authentifizierung."
   }
+}
+
 }
