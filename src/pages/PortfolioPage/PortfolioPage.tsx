@@ -34,7 +34,7 @@ import { useTranslation } from 'react-i18next'
           <PortfolioItemCard>
             <PortfolioItemCardImage>
             <img className="primary" src={FokuZSlider} alt="Slider Fokuz" />
-            <img className="alternative" src={FokuZSliderAlternativ} alt="Alternative Image" />
+            <img className="alternative" src={FokuZSliderAlternativ} alt="Alternative slider" />
             </PortfolioItemCardImage>
             <PortfolioItemCardTitle>
               {t('portfolioPage.itemTitle1')}
@@ -47,7 +47,7 @@ import { useTranslation } from 'react-i18next'
           <PortfolioItemCard>
             <PortfolioItemCardImage>
             <img className="primary" src={SprachSign} alt="Authentication page" />
-            <img className="alternative" src={SprachSignAlternativ} alt="Alternative Image" />
+            <img className="alternative" src={SprachSignAlternativ} alt="Alternative page" />
             </PortfolioItemCardImage>
             <PortfolioItemCardTitle>
               {t('portfolioPage.itemTitle2')}

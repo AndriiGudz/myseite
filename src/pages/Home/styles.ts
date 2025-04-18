@@ -341,10 +341,18 @@ export const PortfolioMessage = styled.div`
   }
 
   @media (max-width: 600px) {
-    max-width: 200px;
+    /* max-width: 200px; */
     font-size: 12px;
     letter-spacing: 1.8px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+    transform: translateX(-100px);
+
+    &.visible {
+    opacity: 1;
+    transform: translateX(0);
+    animation: ${slideInLeft} 1s ease-out;
+  }
   }
 `
 
