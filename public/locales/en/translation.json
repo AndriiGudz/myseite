@@ -6,6 +6,9 @@
   "description2": "Now, I want to apply my diverse experience to a new role as a Frontend Developer.",
   "home": "Home",
   "resume": "Resume",
+  "portfolio": "Portfolio",
+  "portfolioDesc": "I enjoy creating modern interfaces with a focus on usability, responsiveness, and clean architecture. I work on both the look and logic — from React components to API integrations.",
+  "portfolioMessage": "Frontend & Fullstack projects I build",
   "getInTouch": "Get in touch",
   "contactMessage": "Please write to me if you have any questions or job offers for me.",
   "created": "Designed and Developed by me.",
@@ -92,5 +95,13 @@
     "integCr": "Integration course DTZ B1, Euroschule Bamberg",
     "btnResEng": "Upload resume .pdf in English",
     "btnResGer": "Upload resume .pdf in German"
+  },
+  "portfolioPage": {
+    "portfolioTitle": "My portfolio",
+    "portfolioSubtitle": "I enjoy creating interfaces that are both pleasant and easy to use. Below are projects or individual components I’ve developed — all part of my professional journey.",
+    "itemTitle1": "Slider for the homepage of a pet photographer’s website.",
+    "itemDescription1": "Responsive slider plementation with a custom design based on Figma layouts for a WordPress website. The slider was built using Swiper.js via CDN, without adding local files to the project. Each slide includes a background image and a customizable background color or gradient, both of which can be configured through the WordPress admin panel, using the Helium theme.",
+    "itemTitle2": "Authentication & Registration Page.",
+    "itemDescription2": "A responsive authentication page with switchable login and registration views, built using React (frontend) and Java (backend). Integrated with a REST API for user authentication and registration. Implemented seamless switching between login and signup forms without page reloads. Used Formik for form state management and client-side validation with user-friendly error handling. Prepared for secure token-based authentication."
   }
 }

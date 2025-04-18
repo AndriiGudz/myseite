@@ -2,18 +2,18 @@ import styled from '@emotion/styled'
 import { Link } from 'react-router-dom'
 
 export const HeaderComponent = styled.header`
-  display: flex;
-  align-items: center; // Центрирует элементы по вертикали
-  justify-content: center; // Центрирует элементы по горизонтали
-  justify-content: space-between;
-  padding: 0 30px; // Отступы по бокам
-  margin: 0; // Убираем вертикальный отступ
-  position: fixed; // Фиксируем хедер
-  top: 0; // Привязываем к верхней части экрана
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 70px;
-  background-color: white; // Фон белого цвета
-  z-index: 1000; // Устанавливаем z-index для отображения поверх контента
+  padding: 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 1000;
 `
 
 // Ссылка на логотип
@@ -70,4 +70,4 @@ export const LanguageSwitcher = styled.select`
     background-color: #fff;
     color: #1a1a1a;
   }
-`;
+`

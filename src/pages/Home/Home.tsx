@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useCallback } from 'react'
 import BlinkingText from '../../components/BlinkingText/BlinkingText'
 import Button from '../../components/Button/Button'
 import {
@@ -10,57 +10,81 @@ import {
   FirstBlock,
   MyPhoto,
   PageBox,
+  PortfolioBlock,
+  PortfolioBox,
+  PortfolioDeescriptionBtn,
+  PortfolioDescription,
+  PortfolioMessage,
   Title,
   TitleHome1,
   TitleHome2,
   TitleSmall,
 } from './styles'
 import myPhoto from '../../assets/my-foto-1.webp'
-import { useTranslation } from 'react-i18next' // Импортируем хук для перевода
+import { useTranslation } from 'react-i18next'
 
 function Home() {
   const { t } = useTranslation() // Используем хук для доступа к переводам
 
   // Используем useCallback, чтобы гарантировать стабильность функции и избежать ESLint ошибок
   const descriptionRef = useRef<HTMLDivElement | null>(null)
+  const portfolioDescriptionRef = useRef<HTMLDivElement | null>(null)
   const contactRef = useRef<HTMLParagraphElement | null>(null)
+  const portfoliotRef = useRef<HTMLParagraphElement | null>(null)
 
-  useEffect(() => {
-    const currentDescriptionRef = descriptionRef.current
-    const currentContactRef = contactRef.current
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
+  const handleIntersection = useCallback(
+    (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible') // Добавляем класс при видимости
         } else {
           entry.target.classList.remove('visible') // Убираем класс, если элемент не виден
         }
-      },
-      {
-        threshold: 0.1, // Сработает, когда 10% элемента будет видимым
-      }
-    )
+      })
+    },
+    []
+  )
 
-    if (currentDescriptionRef) {
-      observer.observe(currentDescriptionRef)
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.1, // Сработает, когда 10% элемента будет видимым
+    })
+
+    if (descriptionRef.current) {
+      observer.observe(descriptionRef.current)
     }
 
-    if (currentContactRef) {
-      observer.observe(currentContactRef)
+    if (portfolioDescriptionRef.current) {
+      observer.observe(portfolioDescriptionRef.current)
+    }
+
+    if (portfoliotRef.current) {
+      observer.observe(portfoliotRef.current)
+    }
+
+    if (contactRef.current) {
+      observer.observe(contactRef.current)
     }
 
     // Функция очистки при размонтировании компонента
     return () => {
-      if (currentDescriptionRef) {
-        observer.unobserve(currentDescriptionRef)
+      if (descriptionRef.current) {
+        observer.unobserve(descriptionRef.current)
       }
 
-      if (currentContactRef) {
-        observer.unobserve(currentContactRef)
+      if (portfolioDescriptionRef.current) {
+        observer.unobserve(portfolioDescriptionRef.current)
+      }
+
+      if (portfoliotRef.current) {
+        observer.unobserve(portfoliotRef.current)
+      }
+
+      if (contactRef.current) {
+        observer.unobserve(contactRef.current)
       }
     }
-  }, [])
+  }, [handleIntersection]) // Добавление handleIntersection в зависимости useEffect
 
   return (
     <PageBox>
@@ -83,6 +107,25 @@ function Home() {
         <Button name={t('resume')} /> {/* Перевод текста */}
       </a>
 
+      {/* Portfolio */}
+      <PortfolioBlock>
+        <PortfolioDeescriptionBtn>
+          <PortfolioDescription ref={portfolioDescriptionRef}>
+            {t('portfolioDesc')}
+          </PortfolioDescription>
+          <a href="portfolio">
+            <Button name={t('portfolio')} />
+          </a>
+        </PortfolioDeescriptionBtn>
+
+        <PortfolioBox>
+          <PortfolioMessage ref={portfoliotRef}>
+            {t('portfolioMessage')}
+          </PortfolioMessage>
+        </PortfolioBox>
+      </PortfolioBlock>
+
+      {/* Contact */}
       <ContactBlock>
         <ContactBox>
           <ContactMessage ref={contactRef}>
