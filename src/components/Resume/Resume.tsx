@@ -18,8 +18,8 @@ import {
 } from './styles'
 import myPhoto from '../../assets/Photo-AGudz.webp'
 import HomeIcon from '@mui/icons-material/Home'
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
-import EmailIcon from '@mui/icons-material/Email'
+// import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid'
+// import EmailIcon from '@mui/icons-material/Email'
 import PersonIcon from '@mui/icons-material/Person'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PublicIcon from '@mui/icons-material/Public'
@@ -47,6 +47,16 @@ function Resume() {
                 <li>{t(`resumePage.intImpl`)}</li>
                 <li>{t(`resumePage.intDev`)}</li>
                 <li>{t(`resumePage.intCollab`)}</li>
+            </ContentBox>
+            <ContentBox>
+                <TitleH5>{t(`resumePage.practic`)}</TitleH5>
+                <p><span>{t(`resumePage.ait2`)}</span></p>
+                <p><span>{t(`resumePage.aitY2`)}</span></p>
+                <li>{t(`resumePage.practicDescrip1`)}</li>
+                <li>{t(`resumePage.practicDescrip2`)}</li>
+                <li>{t(`resumePage.practicDescrip3`)}</li>
+                <li>{t(`resumePage.practicDescrip4`)}</li>
+                <li>{t(`resumePage.practicDescrip5`)}</li>
             </ContentBox>
             <ContentBox>
                 <TitleH5>{t(`resumePage.prjMan`)}</TitleH5>
@@ -109,14 +119,14 @@ function Resume() {
             <HomeIcon />
             <p>{t(`resumePage.address1`)}</p>
           </IconDatum>
-          <IconDatum>
+          {/* <IconDatum>
             <PhoneAndroidIcon />
             <p>{t(`resumePage.phone1`)}</p>
           </IconDatum>
           <IconDatum>
             <EmailIcon />
             <p>{t(`resumePage.email1`)}</p>
-          </IconDatum>
+          </IconDatum> */}
           <IconDatum>
             <LinkedInIcon />
             <p><a href="https://www.linkedin.com/in/andriigudz/" target='_blank' rel="noopener noreferrer">{t(`resumePage.linkedin`)}</a></p>
@@ -165,9 +175,11 @@ function Resume() {
               <p><span>{t(`resumePage.lang`)}</span></p>
               <li>HTML</li>
               <li>CSS</li>
+              <li>TailwindCSS</li>
               <li>JavaScipt</li>
               <li>TypeScript</li>
               <li>React</li>
+              <li>Astro</li>
               <li>Node.js</li>
               <li>Java</li>
             </div>

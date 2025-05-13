@@ -107,6 +107,10 @@ export const PortfolioBox = styled.div`
   align-items: stretch;
   gap: 32px;
 
+  & a {
+    text-decoration: none;
+  }
+
   @media (max-width: 768px) {
     padding: 16px;
   }
