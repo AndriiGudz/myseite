@@ -34,7 +34,7 @@ function PortfolioPage() {
       </PortfolioSubtitle>
 
       <PortfolioBox>
-        <a href="https://mv-kfz.com" target="_blank" rel="noopener">
+        <a href="https://mv-kfz.com" target="_blank" rel="noopener noreferrer">
           <PortfolioItemCard>
             <PortfolioItemCardImage>
               <img
