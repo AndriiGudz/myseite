@@ -216,10 +216,26 @@ export const IconDatum = styled.div`
   align-items: flex-start;
   font-size: 16px;
   gap: 22px;
+  width: 100%;
+  max-width: 100%;
+
+  p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all; /* Принудительный перенос слов */
+    max-width: 200px; /* Фиксированная максимальная ширина */
+    line-height: 1.4;
+    white-space: pre-wrap; /* Сохраняет пробелы и переносы */
+  }
 
   a {
     color: #1a1a1a;
     text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    display: inline-block; /* Позволяет ссылке переноситься */
+    max-width: 100%;
   }
 
   a:hover {
@@ -228,5 +244,8 @@ export const IconDatum = styled.div`
 
   @media (max-width: 600px) {
     font-size: 14px;
+    p {
+      max-width: 150px; /* Меньшая ширина для мобильных */
+    }
   }
 `

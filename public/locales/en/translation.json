@@ -14,9 +14,9 @@
   "created": "Designed and Developed by me.",
   "resumePage": {
     "contDetal": "Contact details",
-    "address1": "Marktplatz, 15. Baunach, 96148",
-    "phone1": "+4915156548401",
-    "email1": "andreygudz.de@gmail.com",
+    "address1": "Baunach, 96148",
+    "phone1": "",
+    "email1": "",
     "linkedin": "https://www.linkedin.com/in/andriigudz/",
     "public": "https://gudz-andrii.com/",
     "perDat1": "Birth date: ",
@@ -45,7 +45,7 @@
     "volleyb": "Volleyball",
     "tenn": "Table Tennis",
     "compSkil": "Computer Skills",
-    "specPr": "Spec. prog.",
+    "specPr": "Software",
     "lang": "Languages",
     "etc": "etc",
     "subTitleh2": "Junior Frontend Developer",
@@ -94,7 +94,15 @@
     "integCrY": "06/2023 - 02/2024",
     "integCr": "Integration course DTZ B1, Euroschule Bamberg",
     "btnResEng": "Upload resume .pdf in English",
-    "btnResGer": "Upload resume .pdf in German"
+    "btnResGer": "Upload resume .pdf in German",
+    "practic": "Junior Full-Stack Developer (Practical Training)",
+    "ait2": "AIT TR GmbH, Berlin, Germany",
+    "aitY2": "01/2024 - 08/2024",
+    "practicDescrip1": "Participated in an intensive hands-on full-stack development training program (1120 hours)",
+    "practicDescrip2": "Developed a web project using React, TypeScript, Redux, HTML, and CSS",
+    "practicDescrip3": "Implemented REST API endpoints with Java & Spring Boot",
+    "practicDescrip4": "Collaborated in a team using GitHub, Jira, and agile methodologies",
+    "practicDescrip5": "Optimized and refactored code for better performance and maintainability"
   },
   "portfolioPage": {
     "portfolioTitle": "My portfolio",
@@ -102,6 +110,8 @@
     "itemTitle1": "Slider for the homepage of a pet photographer’s website.",
     "itemDescription1": "Responsive slider plementation with a custom design based on Figma layouts for a WordPress website. The slider was built using Swiper.js via CDN, without adding local files to the project. Each slide includes a background image and a customizable background color or gradient, both of which can be configured through the WordPress admin panel, using the Helium theme.",
     "itemTitle2": "Authentication & Registration Page.",
-    "itemDescription2": "A responsive authentication page with switchable login and registration views, built using React (frontend) and Java (backend). Integrated with a REST API for user authentication and registration. Implemented seamless switching between login and signup forms without page reloads. Used Formik for form state management and client-side validation with user-friendly error handling. Prepared for secure token-based authentication."
+    "itemDescription2": "A responsive authentication page with switchable login and registration views, built using React (frontend) and Java (backend). Integrated with a REST API for user authentication and registration. Implemented seamless switching between login and signup forms without page reloads. Used Formik for form state management and client-side validation with user-friendly error handling. Prepared for secure token-based authentication.",
+    "itemMvkfz": "Landing page for an automotive key specialist.",
+    "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel is a multilingual one-page website for a specialist in the production and repair of car keys. The project and design were developed from scratch with a focus on fast loading, SEO optimization, and simple order submission via Telegram. Users can quickly submit a request through the website form, and the owner instantly receives a notification via a Telegram bot."
   }
 }
