@@ -1,38 +1,4 @@
 import styled from '@emotion/styled'
-import { keyframes } from '@emotion/react'
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(20px); /* Сдвиг вниз для эффекта плавного появления */
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`
-
-const slideInRight = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const slideInLeft = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
 
 export const PageBox = styled.div`
   margin-top: 102px;
@@ -91,17 +57,6 @@ export const DescriptionBox = styled.div`
   text-align: justify;
   left: -28px;
   bottom: 62px;
-  opacity: 0; /* Изначально скрыт */
-  transform: translateY(20px); /* Изначально сдвинут вниз */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Переход для плавного появления */
-
-  /* Класс, который будет добавляться при видимости */
-  &.visible {
-    opacity: 1;
-    transform: translateY(0); /* Анимация появления */
-  }
-
-  // animation: ${fadeIn} 2s ease-in-out;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     align-items: center;
@@ -221,13 +176,13 @@ export const TitleHome2 = styled.span`
 // PortfolioBlock
 export const PortfolioBlock = styled.div`
   display: flex;
-  flex-wrap: wrap;           /* позволяем переносить при нехватке места */
+  flex-wrap: wrap; /* позволяем переносить при нехватке места */
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
   padding: 102px 0;
-  box-sizing: border-box;    /* учитываем padding в ширине */
-  min-width: 0;              /* важно, чтобы дети ужимались */
+  box-sizing: border-box; /* учитываем padding в ширине */
+  min-width: 0; /* важно, чтобы дети ужимались */
 
   @media (min-width: 600px) and (max-width: 1050px) {
     padding-top: 52px;
@@ -244,8 +199,8 @@ export const PortfolioBlock = styled.div`
 `
 
 export const PortfolioDeescriptionBtn = styled.div`
-  flex: 1 1 0;               /* займёт доступное место, но может ужаться */
-  min-width: 0;              /* предотвратить overflow по контенту */
+  flex: 1 1 0; /* займёт доступное место, но может ужаться */
+  min-width: 0; /* предотвратить overflow по контенту */
   /* max-width: 400px;          максимальная ширина */
   width: 100%;
   display: flex;
@@ -265,15 +220,6 @@ export const PortfolioDescription = styled.div`
   gap: 14px;
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-    animation: ${fadeIn} 0.8s ease-out;
-  }
 
   @media (min-width: 600px) and (max-width: 1050px) {
     padding: 0 24px;
@@ -287,9 +233,9 @@ export const PortfolioDescription = styled.div`
 `
 
 export const PortfolioBox = styled.div`
-  flex: 0 1 auto;            /* по содержимому, но может ужаться */
-  min-width: 0;              /* чтобы не вылазило */
-  max-width: 650px;          /* максимальная ширина */
+  flex: 0 1 auto; /* по содержимому, но может ужаться */
+  min-width: 0; /* чтобы не вылазило */
+  max-width: 650px; /* максимальная ширина */
   width: 100%;
   height: 160px;
   display: flex;
@@ -312,8 +258,8 @@ export const PortfolioBox = styled.div`
 `
 
 export const PortfolioMessage = styled.div`
-  flex: 1 1 0;               /* займёт всё внутри PortfolioBox */
-  min-width: 0;              /* чтобы текст ужимался */
+  flex: 1 1 0; /* займёт всё внутри PortfolioBox */
+  min-width: 0; /* чтобы текст ужимался */
   max-width: 440px;
   width: 100%;
   padding-left: 52px;
@@ -323,15 +269,6 @@ export const PortfolioMessage = styled.div`
   font-weight: 500;
   letter-spacing: 3.3px;
   text-transform: uppercase;
-  opacity: 0;
-  transform: translateX(100px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-
-  &.visible {
-    opacity: 1;
-    transform: translateX(0);
-    animation: ${slideInRight} 1s ease-out;
-  }
 
   @media (min-width: 600px) and (max-width: 1050px) {
     max-width: 282px;
@@ -346,13 +283,6 @@ export const PortfolioMessage = styled.div`
     letter-spacing: 1.8px;
     /* padding-left: 10px; */
     padding-right: 10px;
-    transform: translateX(-100px);
-
-    &.visible {
-    opacity: 1;
-    transform: translateX(0);
-    animation: ${slideInLeft} 1s ease-out;
-  }
   }
 `
 
@@ -400,17 +330,6 @@ export const ContactMessage = styled.p`
   letter-spacing: 3.3px;
   text-transform: uppercase;
   padding-right: 52px;
-  opacity: 0; /* Изначально скрыт */
-  transform: translateX(-100px); /* Изначально сдвинут влево */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Переход для плавного появления */
-
-  /* Класс, который будет добавляться при видимости */
-  &.visible {
-    opacity: 1;
-    transform: translateX(0); /* Анимация появления */
-  }
-
-  animation: ${slideInLeft} 1.5s ease-out;
 
   @media screen and (min-width: 600px) and (max-width: 1050px) {
     width: 282px;

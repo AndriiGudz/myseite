@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 import GlobalStyles from './styles/GlobalStyles'
 import Home from './pages/Home/Home'
 import Layout from './components/Layout/Layout'
@@ -10,17 +11,19 @@ import CutlyPage from './pages/CutlyPage/CutlyPage';
 function App() {
   
   return (
-    <BrowserRouter>
-      <GlobalStyles />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/cutly" element={<CutlyPage />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <GlobalStyles />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/cutly" element={<CutlyPage />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </HelmetProvider>
   )
 }
 
