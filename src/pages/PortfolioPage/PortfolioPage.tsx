@@ -17,6 +17,8 @@ import SprachSign from '../../assets/SignIn.png'
 import SprachSignAlternativ from '../../assets/SignUp.png'
 import MvkfzScr1 from '../../assets/mv-kfz-src1.webp'
 import MvkfzScr2 from '../../assets/mv-kfz-src2.webp'
+import Cutly1 from '../../assets/cutly_1.webp'
+import Cutly4 from '../../assets/cutly_4.webp'
 
 import { useTranslation } from 'react-i18next'
 
@@ -34,6 +36,25 @@ function PortfolioPage() {
       </PortfolioSubtitle>
 
       <PortfolioBox>
+        <a href="/cutly" rel="noopener noreferrer">
+          <PortfolioItemCard>
+            <PortfolioItemCardImage>
+              <img className="primary contain" src={Cutly1} alt="Cutly App" />
+              <img
+                className="alternative contain"
+                src={Cutly4}
+                alt="Cutly Meal App"
+              />
+            </PortfolioItemCardImage>
+            <PortfolioItemCardTitle>
+              {t('portfolioPage.itemCutly')}
+            </PortfolioItemCardTitle>
+            <PortfolioItemCardDescription>
+              {t('portfolioPage.itemDescriptionCutly')}
+            </PortfolioItemCardDescription>
+          </PortfolioItemCard>
+        </a>
+
         <a href="https://mv-kfz.com" target="_blank" rel="noopener noreferrer">
           <PortfolioItemCard>
             <PortfolioItemCardImage>

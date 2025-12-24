@@ -109,6 +109,15 @@ export const PortfolioBox = styled.div`
 
   & a {
     text-decoration: none;
+    display: flex; /* Делаем ссылку flex-контейнером */
+    height: auto; /* Позволяем растягиваться по высоте flex-элемента (родителя) */
+    width: 100%;
+    max-width: 552px;
+  }
+  
+  /* Карточка внутри ссылки должна заполнять всю высоту */
+  & a > div {
+    height: 100%;
   }
 
   @media (max-width: 768px) {
@@ -122,6 +131,7 @@ export const PortfolioItemCard = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 552px;
+  /* height: 100%; - удаляем, чтобы прямые потомки PortfolioBox могли растягиваться через align-items: stretch */
   padding: 16px;
   gap: 16px;
   border-radius: 4px;
@@ -169,6 +179,11 @@ export const PortfolioItemCardImage = styled.div`
   /* По умолчанию альтернативная картинка скрыта */
   & img.alternative {
     opacity: 0;
+  }
+
+  /* Для изображений, которые должны вписываться полностью (например, с телефона) */
+  & img.contain {
+    object-fit: contain;
   }
 
   @media (max-width: 480px) {

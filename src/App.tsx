@@ -5,6 +5,7 @@ import Layout from './components/Layout/Layout'
 import './i18n';
 import ResumePage from './pages/ResumePage/ResumePage';
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
+import CutlyPage from './pages/CutlyPage/CutlyPage';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/cutly" element={<CutlyPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>

@@ -112,6 +112,8 @@
     "itemTitle2": "Authentication & Registration Page.",
     "itemDescription2": "A responsive authentication page with switchable login and registration views, built using React (frontend) and Java (backend). Integrated with a REST API for user authentication and registration. Implemented seamless switching between login and signup forms without page reloads. Used Formik for form state management and client-side validation with user-friendly error handling. Prepared for secure token-based authentication.",
     "itemMvkfz": "Landing page for an automotive key specialist.",
-    "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel is a multilingual one-page website for a specialist in the production and repair of car keys. The project and design were developed from scratch with a focus on fast loading, SEO optimization, and simple order submission via Telegram. Users can quickly submit a request through the website form, and the owner instantly receives a notification via a Telegram bot."
+    "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel is a multilingual one-page website for a specialist in the production and repair of car keys. The project and design were developed from scratch with a focus on fast loading, SEO optimization, and simple order submission via Telegram. Users can quickly submit a request through the website form, and the owner instantly receives a notification via a Telegram bot.",
+    "itemCutly": "Cutly — AI-powered meal planning app",
+    "itemDescriptionCutly": "This is a mobile application for smart meal planning using artificial intelligence. The app uses the following technologies: Frontend: React Native (Expo), TypeScript; Backend / BaaS: Supabase (Auth, Database, Storage); State management: Zustand / Redux; AI: OpenAI / Gemini (menu and recipe generation)."
   }
 }
