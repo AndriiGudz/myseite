@@ -115,7 +115,7 @@ function Home() {
           </ContactMessage>
         </ContactBox>
         <BtnContact>
-          <a href="mailto:andreygudz.de@gmail.com">
+          <a href="mailto:andriigudz.de@gmail.com">
             <Button name={t('getInTouch')} />
           </a>
         </BtnContact>
