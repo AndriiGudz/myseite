@@ -160,7 +160,11 @@ const CutlyPage: React.FC = () => {
           {/* <PrimaryButton href="#">
             <FaApple size={20} /> App Store
           </PrimaryButton> */}
-          <PrimaryButton href="#">
+          <PrimaryButton
+            href="https://play.google.com/store/apps/details?id=com.cutly.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGooglePlay size={20} /> {t('cutlyPage.googlePlay')}
           </PrimaryButton>
         </ButtonGroup>

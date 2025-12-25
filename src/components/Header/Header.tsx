@@ -7,7 +7,9 @@ import {
   Logo,
   LogoLink,
   NavBar,
-  LanguageSwitcher // Новый стиль для селектора
+  LanguageContainer,
+  LangOption,
+  Separator
 } from './styles';
 
 interface HeaderProps {
@@ -31,13 +33,21 @@ function Header({ onMenuToggle }: HeaderProps) {
       </LogoLink>
       <NavBar>
         {/* Свитчер языка */}
-        <LanguageSwitcher
-          value={i18n.language} // Отображение текущего языка
-          onChange={(e) => changeLanguage(e.target.value)} // Смена языка при выборе
-        >
-          <option value="en">EN</option>
-          <option value="de">DE</option>
-        </LanguageSwitcher>
+        <LanguageContainer>
+          <LangOption 
+            isActive={i18n.language === 'en'} 
+            onClick={() => changeLanguage('en')}
+          >
+            EN
+          </LangOption>
+          <Separator>|</Separator>
+          <LangOption 
+            isActive={i18n.language === 'de'} 
+            onClick={() => changeLanguage('de')}
+          >
+            DE
+          </LangOption>
+        </LanguageContainer>
         <MorphingMenu onMenuToggle={onMenuToggle} />
       </NavBar>
     </HeaderComponent>

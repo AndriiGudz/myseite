@@ -29,6 +29,7 @@ function MorphingMenu({ onMenuToggle }: MorphingMenuProps) {
           <li><a href="/">{t(`home`)}</a></li>
           <li><a href="/portfolio">{t(`portfolio`)}</a></li>
           <li><a href="/resume">{t(`resume`)}</a></li>
+          <li><a href="/cutly" className="cutly-link">Cutly</a></li>
         </ul>
       </nav>
     </div>

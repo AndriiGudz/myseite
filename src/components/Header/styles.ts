@@ -50,24 +50,38 @@ export const NavBar = styled.div`
   gap: 24px;
 `
 
-// Добавляем стили для выпадающего списка языка
-export const LanguageSwitcher = styled.select`
-  padding: 5px 10px;
-  font-size: 16px;
+// Контейнер для переключателя языков
+export const LanguageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: 'Inter', sans-serif;
-  background-color: transparent;
-  border: 1px solid #1a1a1a;
-  border-radius: 4px;
+  font-size: 16px;
+`
+
+interface LangOptionProps {
+  isActive: boolean
+}
+
+export const LangOption = styled.button<LangOptionProps>`
+  background: none;
+  border: none;
   cursor: pointer;
-  color: #1a1a1a;
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: ${({ isActive }) => (isActive ? '700' : '400')};
+  color: ${({ isActive }) => (isActive ? '#1a1a1a' : '#b4aea8')};
+  transition: color 0.2s ease;
 
-  &:focus {
-    outline: none;
-    border-color: #b4aea8;
-  }
-
-  option {
-    background-color: #fff;
+  &:hover {
     color: #1a1a1a;
   }
+  
+  &:focus {
+    outline: none;
+  }
+`
+
+export const Separator = styled.span`
+  color: #b4aea8;
 `
