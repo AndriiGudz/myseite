@@ -9,6 +9,8 @@ i18n
   .use(initReactI18next) // Модуль инициализации
   .init({
     fallbackLng: 'en', // Язык по умолчанию
+    supportedLngs: ['en', 'de'],
+    load: 'languageOnly',
     debug: true, // Включение отладки
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],

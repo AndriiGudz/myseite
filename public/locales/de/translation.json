@@ -115,5 +115,58 @@
     "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel ist eine mehrsprachige One-Page-Website für einen Spezialisten zur Herstellung und Reparatur von Autoschlüsseln. Das Projekt und das Design wurden von Grund auf neu entwickelt – mit Fokus auf schnelle Ladezeiten, SEO-Optimierung und eine einfache Bestellübermittlung per Telegram. Kunden können über das Formular schnell eine Anfrage senden, und der Betreiber erhält die Benachrichtigung sofort über den Telegram-Bot.",
     "itemCutly": "Cutly — KI-gestützte Essensplanung-App",
     "itemDescriptionCutly": "Eine mobile App für intelligente Essensplanung mit künstlicher Intelligenz. Verwendete Technologien: Frontend: React Native (Expo), TypeScript; Backend/BaaS: Supabase (Auth, Datenbank, Storage); State-Management: Zustand/Redux; KI: OpenAI/Gemini (Menü- und Rezeptgenerierung)."
+  },
+  "cutlyPage": {
+    "seoTitle": "Cutly – Intelligente Essensplanung mit KI",
+    "seoDescription": "Intelligente Essensplanung mit KI: Menüs, Rezepte und Einkaufslisten in Sekunden.",
+    "logoAlt": "Cutly Logo",
+    "subtitle": "Cutly ist dein persönlicher Assistent. Plane deine Ernährung, erstelle Menüs und Einkaufslisten in Sekunden.",
+    "googlePlay": "Google Play",
+    "screenshotsAlt": "Cutly Screenshot {{index}}",
+    "description": "Cutly ist eine mobile App für intelligente Essensplanung mit künstlicher Intelligenz. Sie hilft Nutzerinnen und Nutzern, schnell ein Menü für einen Tag oder eine Woche zu erstellen, indem Gerichte anhand von Ernährung, Allergien, Geschmacksvorlieben und Region ausgewählt werden. Außerdem wird automatisch eine Einkaufsliste für die ausgewählten Mahlzeiten erstellt. Die App ist mehrsprachig und unterstützt zum Start Englisch, Deutsch, Ukrainisch und Russisch.",
+    "featuresTitle": "Kernfunktionen",
+    "features": {
+      "aiMenu": {
+        "title": "KI-Menügenerierung",
+        "text": "Menüs für einen Tag oder eine Woche in Sekunden. Smarte Gerichtauswahl nach deinem Geschmack."
+      },
+      "diets": {
+        "title": "Diäten & Ernährung",
+        "text": "Unterstützung für Vegan, Keto, glutenfrei, diabetische Ernährung und weitere spezielle Ernährungsformen."
+      },
+      "allergies": {
+        "title": "Allergien berücksichtigen",
+        "text": "Unerwünschte Zutaten werden ausgeschlossen, damit du dich sicher fühlst."
+      },
+      "shoppingList": {
+        "title": "Intelligente Einkaufsliste",
+        "text": "Automatische Produktliste auf Basis des ausgewählten Menüs."
+      },
+      "personalization": {
+        "title": "Personalisierung",
+        "text": "Fragebogen für präzise Empfehlungen. Menüverlauf, Favoriten und ausgeschlossene Rezepte."
+      },
+      "dataControl": {
+        "title": "Datenkontrolle",
+        "text": "Volle Kontrolle über deine Daten. Wir erfassen nur, was für die App-Funktion nötig ist."
+      }
+    },
+    "audienceTitle": "Für wen ist Cutly?",
+    "audience": {
+      "healthy": "Für Menschen, die beim Planen gesunder Ernährung Zeit sparen möchten",
+      "family": "Für Familien und vielbeschäftigte Berufstätige, die Struktur schätzen",
+      "everyone": "Für alle, die auf Gesundheit und Ernährung achten"
+    },
+    "techTitle": "Eingesetzte Technologien",
+    "privacyTitle": "Datenschutz & Daten",
+    "privacyHeading": "Deine Daten sind geschützt",
+    "privacyText": "Wir respektieren deine Privatsphäre und schützen deine persönlichen Daten. Cutly sammelt nur die Daten, die für die korrekte Funktion der App notwendig sind. Nutzerinnen und Nutzer können ihr Konto und die dazugehörigen Daten jederzeit löschen.",
+    "privacyPolicy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "accountTitle": "Kontoverwaltung",
+    "accountHeading": "Konto löschen",
+    "accountText": "Nutzerinnen und Nutzer können die Löschung ihres Kontos direkt in der App anfordern. Nach der Löschung werden alle verbundenen personenbezogenen Daten dauerhaft entfernt.",
+    "developerTitle": "Über den Entwickler",
+    "developerText": "Cutly wird als unabhängiges Projekt mit Fokus auf Komfort, Transparenz und moderne Technologien entwickelt. Feedback und Vorschläge sind immer willkommen."
   }
 }

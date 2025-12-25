@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 import {
   // FaApple,
   FaGooglePlay,
@@ -80,10 +81,62 @@ const staggerContainer = {
 }
 
 const CutlyPage: React.FC = () => {
+  const { t } = useTranslation()
+
+  const featureCards = [
+    {
+      icon: <FaRobot />,
+      titleKey: 'cutlyPage.features.aiMenu.title',
+      textKey: 'cutlyPage.features.aiMenu.text',
+    },
+    {
+      icon: <FaLeaf />,
+      titleKey: 'cutlyPage.features.diets.title',
+      textKey: 'cutlyPage.features.diets.text',
+    },
+    {
+      icon: <FaUtensils />,
+      titleKey: 'cutlyPage.features.allergies.title',
+      textKey: 'cutlyPage.features.allergies.text',
+    },
+    {
+      icon: <FaCartShopping />,
+      titleKey: 'cutlyPage.features.shoppingList.title',
+      textKey: 'cutlyPage.features.shoppingList.text',
+    },
+    {
+      icon: <FaClockRotateLeft />,
+      titleKey: 'cutlyPage.features.personalization.title',
+      textKey: 'cutlyPage.features.personalization.text',
+    },
+    {
+      icon: <FaShieldHalved />,
+      titleKey: 'cutlyPage.features.dataControl.title',
+      textKey: 'cutlyPage.features.dataControl.text',
+    },
+  ]
+
+  const audienceItems = [
+    { icon: <MdHealthAndSafety />, textKey: 'cutlyPage.audience.healthy' },
+    { icon: <MdFamilyRestroom />, textKey: 'cutlyPage.audience.family' },
+    { icon: <FaLeaf />, textKey: 'cutlyPage.audience.everyone' },
+  ]
+
+  const techItems = [
+    { name: 'React Native', icon: <FaReact /> },
+    { name: 'Expo', icon: <SiExpo /> },
+    { name: 'TypeScript', icon: <SiTypescript /> },
+    { name: 'Supabase', icon: <SiSupabase /> },
+    { name: 'Zustand', icon: <FaLayerGroup /> },
+    { name: 'OpenAI', icon: <SiOpenai /> },
+    { name: 'Gemini', icon: <SiGoogle /> },
+  ]
+
   return (
     <PageContainer>
       <Helmet>
-        <title>Cutly - Умное планирование питания с AI</title>
+        <title>{t('cutlyPage.seoTitle')}</title>
+        <meta name="description" content={t('cutlyPage.seoDescription')} />
         <link
           href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap"
           rel="stylesheet"
@@ -96,17 +149,18 @@ const CutlyPage: React.FC = () => {
         animate="visible"
         variants={staggerContainer}
       >
-        <LogoImage src={Logo} alt="Cutly Logo" variants={fadeInUp} />
-        <Subtitle variants={fadeInUp}>
-          Cutly - ваш персональный помощник. Планируйте питание, создавайте меню
-          и списки покупок за секунды.
-        </Subtitle>
+        <LogoImage
+          src={Logo}
+          alt={t('cutlyPage.logoAlt')}
+          variants={fadeInUp}
+        />
+        <Subtitle variants={fadeInUp}>{t('cutlyPage.subtitle')}</Subtitle>
         <ButtonGroup variants={fadeInUp}>
           {/* <PrimaryButton href="#">
             <FaApple size={20} /> App Store
           </PrimaryButton> */}
           <PrimaryButton href="#">
-            <FaGooglePlay size={20} /> Google Play
+            <FaGooglePlay size={20} /> {t('cutlyPage.googlePlay')}
           </PrimaryButton>
         </ButtonGroup>
       </HeroSection>
@@ -160,7 +214,7 @@ const CutlyPage: React.FC = () => {
               >
                 <img
                   src={img}
-                  alt={`Cutly Screenshot ${index + 1}`}
+                  alt={t('cutlyPage.screenshotsAlt', { index: index + 1 })}
                   style={{
                     width: '100%',
                     borderRadius: '20px',
@@ -181,15 +235,7 @@ const CutlyPage: React.FC = () => {
         viewport={{ once: true }}
         variants={fadeInUp}
       >
-        <DescriptionText>
-          Cutly — это мобильное приложение для умного планирования питания с
-          использованием искусственного интеллекта. Приложение помогает
-          пользователям быстро составлять меню на день или неделю, подбирая
-          блюда с учётом диеты, аллергий, вкусовых предпочтений и региона
-          проживания, а также формирует список покупок для выбранных блюд.
-          Приложение мультиязычное и на старте поддерживает английский,
-          немецкий, украинский и русский языки.
-        </DescriptionText>
+        <DescriptionText>{t('cutlyPage.description')}</DescriptionText>
       </Section>
 
       {/* Key Features */}
@@ -199,68 +245,15 @@ const CutlyPage: React.FC = () => {
         viewport={{ once: true }}
         variants={staggerContainer}
       >
-        <SectionTitle>Ключевые фишки</SectionTitle>
+        <SectionTitle>{t('cutlyPage.featuresTitle')}</SectionTitle>
         <Grid>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaRobot />
-            </IconWrapper>
-            <CardTitle>AI генерация меню</CardTitle>
-            <CardText>
-              Мгновенное создание меню на день или неделю. Умный подбор блюд с
-              учетом ваших вкусов.
-            </CardText>
-          </Card>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaLeaf />
-            </IconWrapper>
-            <CardTitle>Диеты и питание</CardTitle>
-            <CardText>
-              Поддержка Vegan, Keto, Gluten-free, диабетического питания и
-              других специальных режимов.
-            </CardText>
-          </Card>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaUtensils />
-            </IconWrapper>
-            <CardTitle>Учет аллергий</CardTitle>
-            <CardText>
-              Исключение нежелательных ингредиентов для безопасности вашего
-              здоровья.
-            </CardText>
-          </Card>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaCartShopping />
-            </IconWrapper>
-            <CardTitle>Умный список покупок</CardTitle>
-            <CardText>
-              Автоматическое формирование списка продуктов на основе выбранного
-              меню.
-            </CardText>
-          </Card>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaClockRotateLeft />
-            </IconWrapper>
-            <CardTitle>Персонализация</CardTitle>
-            <CardText>
-              Персональный опросник для точных рекомендаций. История меню,
-              избранные и исключённые рецепты.
-            </CardText>
-          </Card>
-          <Card variants={fadeInUp}>
-            <IconWrapper>
-              <FaShieldHalved />
-            </IconWrapper>
-            <CardTitle>Контроль данных</CardTitle>
-            <CardText>
-              Полный контроль над вашими данными. Мы собираем только то, что
-              необходимо для работы.
-            </CardText>
-          </Card>
+          {featureCards.map((item) => (
+            <Card key={item.titleKey} variants={fadeInUp}>
+              <IconWrapper>{item.icon}</IconWrapper>
+              <CardTitle>{t(item.titleKey)}</CardTitle>
+              <CardText>{t(item.textKey)}</CardText>
+            </Card>
+          ))}
         </Grid>
       </Section>
 
@@ -271,49 +264,22 @@ const CutlyPage: React.FC = () => {
         viewport={{ once: true }}
         variants={staggerContainer}
       >
-        <SectionTitle>Для кого Cutly?</SectionTitle>
+        <SectionTitle>{t('cutlyPage.audienceTitle')}</SectionTitle>
         <ListSection>
-          <ListItem variants={fadeInUp}>
-            <IconWrapper style={{ margin: 0 }}>
-              <MdHealthAndSafety />
-            </IconWrapper>
-            <CardText>
-              Для людей, которые хотят экономить время на планировании здорового
-              питания
-            </CardText>
-          </ListItem>
-          <ListItem variants={fadeInUp}>
-            <IconWrapper style={{ margin: 0 }}>
-              <MdFamilyRestroom />
-            </IconWrapper>
-            <CardText>
-              Для семей и занятых специалистов, ценящих структуру
-            </CardText>
-          </ListItem>
-          <ListItem variants={fadeInUp}>
-            <IconWrapper style={{ margin: 0 }}>
-              <FaLeaf />
-            </IconWrapper>
-            <CardText>
-              Для всех, кто следит за своим здоровьем и рационом
-            </CardText>
-          </ListItem>
+          {audienceItems.map((item) => (
+            <ListItem key={item.textKey} variants={fadeInUp}>
+              <IconWrapper style={{ margin: 0 }}>{item.icon}</IconWrapper>
+              <CardText>{t(item.textKey)}</CardText>
+            </ListItem>
+          ))}
         </ListSection>
       </Section>
 
       {/* Tech Stack */}
       <Section>
-        <SectionTitle>Используемые технологии</SectionTitle>
+        <SectionTitle>{t('cutlyPage.techTitle')}</SectionTitle>
         <TechGrid>
-          {[
-            { name: 'React Native', icon: <FaReact /> },
-            { name: 'Expo', icon: <SiExpo /> },
-            { name: 'TypeScript', icon: <SiTypescript /> },
-            { name: 'Supabase', icon: <SiSupabase /> },
-            { name: 'Zustand', icon: <FaLayerGroup /> },
-            { name: 'OpenAI', icon: <SiOpenai /> },
-            { name: 'Gemini', icon: <SiGoogle /> },
-          ].map((tech, index) => (
+          {techItems.map((tech, index) => (
             <TechCard
               key={tech.name}
               initial={{ opacity: 0, y: 20 }}
@@ -335,7 +301,7 @@ const CutlyPage: React.FC = () => {
         viewport={{ once: true }}
         variants={fadeInUp}
       >
-        <SectionTitle>Конфиденциальность и данные</SectionTitle>
+        <SectionTitle>{t('cutlyPage.privacyTitle')}</SectionTitle>
         <InfoBlock>
           <div
             style={{
@@ -347,21 +313,16 @@ const CutlyPage: React.FC = () => {
           >
             <FaShieldHalved size={32} color="#2D8259" />
             <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-              Ваши данные под защитой
+              {t('cutlyPage.privacyHeading')}
             </h3>
           </div>
-          <CardText>
-            Мы уважаем вашу приватность и стремимся защищать ваши персональные
-            данные. Cutly собирает только те данные, которые необходимы для
-            корректной работы приложения. Пользователи могут удалить аккаунт и
-            связанные с ним данные в любое время.
-          </CardText>
+          <CardText>{t('cutlyPage.privacyText')}</CardText>
           <div style={{ marginTop: '20px', display: 'flex', gap: '20px' }}>
             <FooterLink href="#" style={{ color: '#2D8259', margin: 0 }}>
-              Политика конфиденциальности
+              {t('cutlyPage.privacyPolicy')}
             </FooterLink>
             <FooterLink href="#" style={{ color: '#2D8259', margin: 0 }}>
-              Terms & Conditions
+              {t('cutlyPage.terms')}
             </FooterLink>
           </div>
         </InfoBlock>
@@ -374,7 +335,7 @@ const CutlyPage: React.FC = () => {
         viewport={{ once: true }}
         variants={fadeInUp}
       >
-        <SectionTitle>Управление аккаунтом</SectionTitle>
+        <SectionTitle>{t('cutlyPage.accountTitle')}</SectionTitle>
         <InfoBlock
           style={{
             borderLeft: '5px solid #E85D3F', // Terracotta color for warning/action
@@ -391,20 +352,18 @@ const CutlyPage: React.FC = () => {
           >
             <FaUserMinus size={32} color="#E85D3F" />
             <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-              Удаление аккаунта
+              {t('cutlyPage.accountHeading')}
             </h3>
           </div>
-          <CardText>
-            Пользователи могут запросить удаление аккаунта прямо внутри
-            приложения. После удаления все связанные персональные данные будут
-            безвозвратно удалены.
-          </CardText>
+          <CardText>{t('cutlyPage.accountText')}</CardText>
         </InfoBlock>
       </Section>
 
       {/* Developer & Footer */}
       <Footer>
-        <SectionTitle style={{ color: 'white' }}>О разработчике</SectionTitle>
+        <SectionTitle style={{ color: 'white' }}>
+          {t('cutlyPage.developerTitle')}
+        </SectionTitle>
         <CardText
           style={{
             color: 'rgba(255,255,255,0.8)',
@@ -412,9 +371,7 @@ const CutlyPage: React.FC = () => {
             margin: '0 auto',
           }}
         >
-          Cutly разрабатывается как независимый проект с фокусом на удобство,
-          прозрачность и современные технологии. Отзывы и предложения всегда
-          приветствуются.
+          {t('cutlyPage.developerText')}
         </CardText>
 
         <div
