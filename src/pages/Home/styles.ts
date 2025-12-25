@@ -39,6 +39,8 @@ export const FirstBlock = styled.div`
 
 export const MyPhoto = styled.img`
   width: 500px;
+  height: auto;
+  object-fit: cover;
   border-radius: 4px;
 
   @media (max-width: 600px) {
