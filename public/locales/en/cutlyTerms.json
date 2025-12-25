@@ -1,0 +1,99 @@
+{
+  "seo": {
+    "title": "Terms & Conditions | Cutly",
+    "description": "Terms and conditions for the Cutly mobile app"
+  },
+  "nav": {
+    "backToCutly": "Back to Cutly"
+  },
+  "title": "Terms & Conditions",
+  "meta": {
+    "effectiveDate": "Effective date: {{date}}",
+    "lastUpdated": "Last updated: {{date}}"
+  },
+  "intro": [
+    "These Terms & Conditions (the “Terms”) govern the use of the Cutly mobile application (the “App”, “we”, “our service”).",
+    "By using the App, you confirm that you have read and agree to these Terms."
+  ],
+  "sections": {
+    "1": {
+      "title": "Purpose of the app",
+      "p1": "Cutly is an app for meal planning, menu generation, and image creation using artificial intelligence algorithms.",
+      "p2": "Information and recommendations provided by the App are for informational purposes only and are not medical, dietary, or professional advice."
+    },
+    "2": {
+      "title": "Registration and account",
+      "p1": "Some features may require you to create an account.",
+      "lead": "You are responsible for:",
+      "items": [
+        "keeping your provided information up to date",
+        "keeping access to your account secure"
+      ],
+      "note": "We reserve the right to suspend or delete an account if these Terms are violated."
+    },
+    "3": {
+      "title": "Use of artificial intelligence (AI)",
+      "p1": "The App uses artificial intelligence algorithms to generate recommendations.",
+      "lead": "AI-generated results:",
+      "items": [
+        "may be inaccurate or incomplete",
+        "are provided “as is”",
+        "do not replace professional consultations"
+      ],
+      "note": "You make decisions independently based on the information provided."
+    },
+    "4": {
+      "title": "Advertising and third-party services",
+      "p1": "The App may display ads.",
+      "p2": "We are not responsible for the content of advertising materials or actions of third-party services that may be accessed through the App."
+    },
+    "5": {
+      "title": "Intellectual property",
+      "p1": "All rights to the App, its design, functionality, and content belong to the Cutly developer unless otherwise stated.",
+      "lead": "You must not:",
+      "items": [
+        "copy or distribute the App’s materials",
+        "use content for commercial purposes without permission"
+      ]
+    },
+    "6": {
+      "title": "Limitation of liability",
+      "intro": "We strive to ensure stable and correct operation of the App, but we do not guarantee:",
+      "items": [
+        "error-free operation",
+        "uninterrupted availability",
+        "that the App will meet user expectations"
+      ],
+      "note": "You use the App at your own risk."
+    },
+    "7": {
+      "title": "Account deletion and discontinuation of use",
+      "lead": "You can at any time:",
+      "items": [
+        "delete your account through the App",
+        "stop using the service"
+      ],
+      "note": "We reserve the right to terminate access to the App if these Terms are violated."
+    },
+    "8": {
+      "title": "Changes to the Terms",
+      "p1": "We may update these Terms & Conditions.",
+      "p2": "Continued use of the App after changes means you accept the updated Terms."
+    },
+    "9": {
+      "title": "Governing law",
+      "p1": "These Terms are governed by applicable European Union law and, where necessary, the law of your country of residence."
+    },
+    "10": {
+      "title": "Contact information",
+      "p1": "For any questions related to the use of the App, you can contact us:"
+    }
+  },
+  "contact": {
+    "emailLabel": "Email:"
+  },
+  "footer": {
+    "backToCutly": "Back to Cutly"
+  }
+}
+

@@ -46,6 +46,7 @@ import {
   TechName,
   Footer,
   FooterLink,
+  StyledRouterLink,
   LogoImage,
   DescriptionText,
 } from './styles'
@@ -318,12 +319,18 @@ const CutlyPage: React.FC = () => {
           </div>
           <CardText>{t('cutlyPage.privacyText')}</CardText>
           <div style={{ marginTop: '20px', display: 'flex', gap: '20px' }}>
-            <FooterLink href="#" style={{ color: '#2D8259', margin: 0 }}>
+            <StyledRouterLink
+              to="/cutly/privacy"
+              style={{ color: '#2D8259', margin: 0 }}
+            >
               {t('cutlyPage.privacyPolicy')}
-            </FooterLink>
-            <FooterLink href="#" style={{ color: '#2D8259', margin: 0 }}>
+            </StyledRouterLink>
+            <StyledRouterLink
+              to="/cutly/terms"
+              style={{ color: '#2D8259', margin: 0 }}
+            >
               {t('cutlyPage.terms')}
-            </FooterLink>
+            </StyledRouterLink>
           </div>
         </InfoBlock>
       </Section>

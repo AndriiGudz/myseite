@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 // --- Color Palette (2025 Natural/Eco) ---
 const colors = {
@@ -340,6 +341,15 @@ export const Footer = styled.footer`
 `
 
 export const FooterLink = styled.a`
+  color: ${colors.primaryLight};
+  text-decoration: none;
+  margin: 0 10px;
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+export const StyledRouterLink = styled(Link)`
   color: ${colors.primaryLight};
   text-decoration: none;
   margin: 0 10px;

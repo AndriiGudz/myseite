@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "Privacy Policy | Cutly",
+    "description": "Privacy policy for the Cutly mobile app"
+  },
+  "nav": {
+    "backToCutly": "Back to Cutly"
+  },
+  "title": "Privacy Policy",
+  "meta": {
+    "effectiveDate": "Effective date: {{date}}",
+    "lastUpdated": "Last updated: {{date}}"
+  },
+  "intro": [
+    "This Privacy Policy describes how the Cutly mobile application (the “App”, “we”, “our service”) collects, uses, and protects users’ personal data.",
+    "By using the App, you agree to the terms of this Privacy Policy."
+  ],
+  "sections": {
+    "1": {
+      "title": "What data we collect",
+      "1": {
+        "title": "Data you provide",
+        "items": [
+          "email address",
+          "name or display name (if provided)",
+          "nutrition settings, preferences, and restrictions",
+          "user profile data"
+        ]
+      },
+      "2": {
+        "title": "Data created while using the app",
+        "items": [
+          "generated menus and recipes",
+          "shopping lists",
+          "feature usage history"
+        ]
+      },
+      "3": {
+        "title": "Technical and analytics data",
+        "items": [
+          "device type, operating system version",
+          "app identifiers",
+          "crash, performance, and feature usage data"
+        ]
+      }
+    },
+    "2": {
+      "title": "Services and technologies we use",
+      "intro": "To operate the App, we may use third-party services:",
+      "1": {
+        "title": "Supabase",
+        "lead": "Supabase is used for:",
+        "items": [
+          "user authentication",
+          "storing user data",
+          "account management"
+        ],
+        "note": "Supabase processes data in accordance with GDPR requirements and applies modern security measures."
+      },
+      "2": {
+        "title": "Firebase (Google)",
+        "lead": "Firebase may be used for:",
+        "items": [
+          "app usage analytics",
+          "error and crash tracking",
+          "improving stability and performance"
+        ],
+        "note": "Firebase may collect technical data, including device identifiers and information about interactions with the app."
+      },
+      "3": {
+        "title": "Artificial intelligence (AI)",
+        "lead": "The App uses AI algorithms to:",
+        "items": [
+          "generate meal recommendations",
+          "build menus and generate dish images"
+        ],
+        "note": "For this purpose, user preferences and data entered in the App may be processed. AI processing is not used for automated decision-making that produces legal effects."
+      },
+      "4": {
+        "title": "Advertising services (Ads)",
+        "p1": "The App may display ads.",
+        "lead": "Advertising partners may:",
+        "items": [
+          "use advertising identifiers",
+          "collect data about ad interactions"
+        ],
+        "note": "We do not share personal data such as name or email with advertisers."
+      }
+    },
+    "3": {
+      "title": "How we use data",
+      "intro": "Collected data is used only for the following purposes:",
+      "items": [
+        "providing and supporting the app’s functionality",
+        "personalizing content and recommendations",
+        "improving service quality and usability",
+        "analytics and bug fixing",
+        "showing ads (if applicable)"
+      ],
+      "note": "We do not sell users’ personal data."
+    },
+    "4": {
+      "title": "Sharing data with third parties",
+      "intro": "Data may be shared only with third parties necessary to operate the App, including:",
+      "items": [
+        "Supabase",
+        "Google Firebase",
+        "advertising and analytics services"
+      ],
+      "note": "Data sharing is carried out in accordance with GDPR and applicable law."
+    },
+    "5": {
+      "title": "Data storage and security",
+      "p1": "We apply technical and organizational measures to protect data from unauthorized access, loss, or modification.",
+      "p2": "Data is stored only for as long as necessary to achieve the purposes described in this Policy."
+    },
+    "6": {
+      "title": "Account and data deletion",
+      "p1": "You have the right to delete your account at any time.",
+      "lead": "Deletion is available:",
+      "items": [
+        "directly in the app, or",
+        "by contacting support"
+      ],
+      "note": "After account deletion, all associated personal data will be deleted or anonymized, except where retention is required by law."
+    },
+    "7": {
+      "title": "Your rights (GDPR)",
+      "lead": "You have the right to:",
+      "items": [
+        "obtain information about your data",
+        "request correction or deletion of data",
+        "restrict processing",
+        "withdraw consent to processing"
+      ],
+      "note": "To exercise these rights, you can contact us using the details below."
+    },
+    "8": {
+      "title": "Children",
+      "p1": "The App is not intended for children under 13. We do not knowingly collect children’s personal data."
+    },
+    "9": {
+      "title": "Changes to this Privacy Policy",
+      "p1": "We may update this Privacy Policy. The current version is always available on this page."
+    },
+    "10": {
+      "title": "Contact information",
+      "p1": "If you have any questions, you can contact us:"
+    },
+    "11": {
+      "title": "Jurisdiction",
+      "p1": "This Privacy Policy is governed by European Union law (GDPR) and applicable national laws."
+    }
+  },
+  "contact": {
+    "emailLabel": "Email:"
+  },
+  "footer": {
+    "backToCutly": "Back to Cutly"
+  }
+}
+
