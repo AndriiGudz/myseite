@@ -112,6 +112,61 @@
     "itemTitle2": "Authentication & Registration Page.",
     "itemDescription2": "A responsive authentication page with switchable login and registration views, built using React (frontend) and Java (backend). Integrated with a REST API for user authentication and registration. Implemented seamless switching between login and signup forms without page reloads. Used Formik for form state management and client-side validation with user-friendly error handling. Prepared for secure token-based authentication.",
     "itemMvkfz": "Landing page for an automotive key specialist.",
-    "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel is a multilingual one-page website for a specialist in the production and repair of car keys. The project and design were developed from scratch with a focus on fast loading, SEO optimization, and simple order submission via Telegram. Users can quickly submit a request through the website form, and the owner instantly receives a notification via a Telegram bot."
+    "itemDescriptionMvkfz": "MV_KFZ Autoschlüssel is a multilingual one-page website for a specialist in the production and repair of car keys. The project and design were developed from scratch with a focus on fast loading, SEO optimization, and simple order submission via Telegram. Users can quickly submit a request through the website form, and the owner instantly receives a notification via a Telegram bot.",
+    "itemCutly": "Cutly — AI-powered meal planning app",
+    "itemDescriptionCutly": "This is a mobile application for smart meal planning using artificial intelligence. The app uses the following technologies: Frontend: React Native (Expo), TypeScript; Backend / BaaS: Supabase (Auth, Database, Storage); State management: Zustand / Redux; AI: OpenAI / Gemini (menu and recipe generation)."
+  },
+  "cutlyPage": {
+    "seoTitle": "Cutly - AI-powered meal planning",
+    "seoDescription": "Smart meal planning with AI: menus, recipes, and shopping lists in seconds.",
+    "logoAlt": "Cutly logo",
+    "subtitle": "Cutly is your personal assistant. Plan meals, create menus and shopping lists in seconds.",
+    "googlePlay": "Google Play",
+    "screenshotsAlt": "Cutly screenshot {{index}}",
+    "description": "Cutly is a mobile app for smart meal planning powered by artificial intelligence. It helps users quickly create a menu for a day or a week, selecting dishes based on diet, allergies, taste preferences, and region, and also generates a shopping list for the chosen meals. The app is multilingual and at launch supports English, German, Ukrainian, and Russian.",
+    "featuresTitle": "Key features",
+    "features": {
+      "aiMenu": {
+        "title": "AI menu generation",
+        "text": "Instant menu creation for a day or a week. Smart dish selection based on your tastes."
+      },
+      "diets": {
+        "title": "Diets & nutrition",
+        "text": "Support for Vegan, Keto, Gluten-free, diabetic nutrition, and other special modes."
+      },
+      "allergies": {
+        "title": "Allergy tracking",
+        "text": "Exclude unwanted ingredients to help keep you safe."
+      },
+      "shoppingList": {
+        "title": "Smart shopping list",
+        "text": "Automatic product list based on the selected menu."
+      },
+      "personalization": {
+        "title": "Personalization",
+        "text": "A personal questionnaire for accurate recommendations. Menu history, favorites, and excluded recipes."
+      },
+      "dataControl": {
+        "title": "Data control",
+        "text": "Full control over your data. We collect only what’s needed for the app to work."
+      }
+    },
+    "audienceTitle": "Who is Cutly for?",
+    "audience": {
+      "healthy": "For people who want to save time planning healthy meals",
+      "family": "For families and busy professionals who value structure",
+      "everyone": "For anyone who cares about their health and diet"
+    },
+    "techTitle": "Tech stack",
+    "privacyTitle": "Privacy & data",
+    "privacyHeading": "Your data is protected",
+    "privacyText": "We respect your privacy and aim to protect your personal data. Cutly collects only the data necessary for the app to function properly. Users can delete their account and associated data at any time.",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "accountTitle": "Account management",
+    "accountHeading": "Delete account",
+    "accountText": "Users can request account deletion directly inside the app. After deletion, all related personal data will be permanently removed.",
+    "developerTitle": "About the developer",
+    "developerText": "Cutly is developed as an independent project focused on convenience, transparency, and modern technologies. Feedback and suggestions are always welcome."
   }
 }

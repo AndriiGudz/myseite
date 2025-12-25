@@ -1,0 +1,99 @@
+{
+  "seo": {
+    "title": "Nutzungsbedingungen | Cutly",
+    "description": "Nutzungsbedingungen für die Cutly Mobile-App"
+  },
+  "nav": {
+    "backToCutly": "Zurück zu Cutly"
+  },
+  "title": "Nutzungsbedingungen",
+  "meta": {
+    "effectiveDate": "Gültig ab: {{date}}",
+    "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+  },
+  "intro": [
+    "Diese Nutzungsbedingungen (die „Bedingungen“) regeln die Nutzung der mobilen Anwendung Cutly (die „App“, „wir“, „unser Dienst“).",
+    "Durch die Nutzung der App bestätigen Sie, dass Sie diese Bedingungen gelesen haben und ihnen zustimmen."
+  ],
+  "sections": {
+    "1": {
+      "title": "Zweck der App",
+      "p1": "Cutly ist eine App zur Ernährungsplanung, Menü-Generierung und Bilderstellung mithilfe von Algorithmen der künstlichen Intelligenz.",
+      "p2": "Informationen und Empfehlungen, die von der App bereitgestellt werden, dienen nur zu Informationszwecken und sind keine medizinische, ernährungsbezogene oder professionelle Beratung."
+    },
+    "2": {
+      "title": "Registrierung und Konto",
+      "p1": "Für einige Funktionen kann die Erstellung eines Kontos erforderlich sein.",
+      "lead": "Sie sind verantwortlich für:",
+      "items": [
+        "die Aktualität der von Ihnen angegebenen Daten",
+        "die Sicherheit des Zugangs zu Ihrem Konto"
+      ],
+      "note": "Wir behalten uns das Recht vor, ein Konto bei Verstoß gegen diese Bedingungen zu sperren oder zu löschen."
+    },
+    "3": {
+      "title": "Nutzung von künstlicher Intelligenz (KI)",
+      "p1": "Die App verwendet Algorithmen der künstlichen Intelligenz zur Generierung von Empfehlungen.",
+      "lead": "KI-generierte Ergebnisse:",
+      "items": [
+        "können ungenau oder unvollständig sein",
+        "werden „wie gesehen“ bereitgestellt",
+        "ersetzen keine professionellen Beratungen"
+      ],
+      "note": "Sie treffen Entscheidungen eigenverantwortlich auf Grundlage der bereitgestellten Informationen."
+    },
+    "4": {
+      "title": "Werbung und Drittanbieter-Dienste",
+      "p1": "In der App kann Werbung angezeigt werden.",
+      "p2": "Wir übernehmen keine Verantwortung für Inhalte von Werbematerialien oder Handlungen von Drittanbieter-Diensten, auf die über die App zugegriffen werden kann."
+    },
+    "5": {
+      "title": "Geistiges Eigentum",
+      "p1": "Alle Rechte an der App, ihrem Design, ihrer Funktionalität und ihren Inhalten liegen beim Entwickler von Cutly, sofern nicht anders angegeben.",
+      "lead": "Es ist untersagt:",
+      "items": [
+        "Materialien der App zu kopieren oder zu verbreiten",
+        "Inhalte ohne Erlaubnis für kommerzielle Zwecke zu nutzen"
+      ]
+    },
+    "6": {
+      "title": "Haftungsbeschränkung",
+      "intro": "Wir bemühen uns um einen stabilen und korrekten Betrieb der App, übernehmen jedoch keine Garantie für:",
+      "items": [
+        "Fehlerfreiheit",
+        "unterbrechungsfreien Betrieb",
+        "die Erfüllung von Nutzererwartungen"
+      ],
+      "note": "Die Nutzung der App erfolgt auf eigenes Risiko."
+    },
+    "7": {
+      "title": "Kontolöschung und Beendigung der Nutzung",
+      "lead": "Sie können jederzeit:",
+      "items": [
+        "Ihr Konto über die App löschen",
+        "die Nutzung des Dienstes beenden"
+      ],
+      "note": "Wir behalten uns das Recht vor, den Zugang zur App bei Verstoß gegen diese Bedingungen zu beenden."
+    },
+    "8": {
+      "title": "Änderungen der Bedingungen",
+      "p1": "Wir können diese Nutzungsbedingungen aktualisieren.",
+      "p2": "Die fortgesetzte Nutzung der App nach Änderungen bedeutet, dass Sie die aktualisierten Bedingungen akzeptieren."
+    },
+    "9": {
+      "title": "Anwendbares Recht",
+      "p1": "Diese Bedingungen unterliegen dem anwendbaren Recht der Europäischen Union und – sofern erforderlich – dem Recht Ihres Wohnsitzlandes."
+    },
+    "10": {
+      "title": "Kontaktinformationen",
+      "p1": "Bei Fragen zur Nutzung der App können Sie uns kontaktieren:"
+    }
+  },
+  "contact": {
+    "emailLabel": "E-Mail:"
+  },
+  "footer": {
+    "backToCutly": "Zurück zu Cutly"
+  }
+}
+

@@ -1,0 +1,162 @@
+{
+  "seo": {
+    "title": "Datenschutzerklärung | Cutly",
+    "description": "Datenschutzerklärung für die Cutly Mobile-App"
+  },
+  "nav": {
+    "backToCutly": "Zurück zu Cutly"
+  },
+  "title": "Datenschutzerklärung",
+  "meta": {
+    "effectiveDate": "Gültig ab: {{date}}",
+    "lastUpdated": "Zuletzt aktualisiert: {{date}}"
+  },
+  "intro": [
+    "Diese Datenschutzerklärung beschreibt, wie die mobile Anwendung Cutly (die „App“, „wir“, „unser Dienst“) personenbezogene Daten von Nutzerinnen und Nutzern erhebt, verwendet und schützt.",
+    "Durch die Nutzung der App stimmen Sie den Bedingungen dieser Datenschutzerklärung zu."
+  ],
+  "sections": {
+    "1": {
+      "title": "Welche Daten wir erheben",
+      "1": {
+        "title": "Daten, die Sie bereitstellen",
+        "items": [
+          "E-Mail-Adresse",
+          "Name oder Anzeigename (falls angegeben)",
+          "Ernährungseinstellungen, Präferenzen und Einschränkungen",
+          "Profilinformationen"
+        ]
+      },
+      "2": {
+        "title": "Daten, die bei der Nutzung der App entstehen",
+        "items": [
+          "generierte Menüs und Rezepte",
+          "Einkaufslisten",
+          "Nutzungsverlauf von Funktionen"
+        ]
+      },
+      "3": {
+        "title": "Technische und Analyse-Daten",
+        "items": [
+          "Gerätetyp, Betriebssystemversion",
+          "App-Identifikatoren",
+          "Daten zu Abstürzen, Performance und Funktionsnutzung"
+        ]
+      }
+    },
+    "2": {
+      "title": "Genutzte Dienste und Technologien",
+      "intro": "Zur Bereitstellung der App können wir Drittanbieter-Dienste verwenden:",
+      "1": {
+        "title": "Supabase",
+        "lead": "Supabase wird verwendet für:",
+        "items": [
+          "Benutzerauthentifizierung",
+          "Speicherung von Nutzerdaten",
+          "Kontoverwaltung"
+        ],
+        "note": "Supabase verarbeitet Daten gemäß den Anforderungen der DSGVO und setzt moderne Sicherheitsmaßnahmen ein."
+      },
+      "2": {
+        "title": "Firebase (Google)",
+        "lead": "Firebase kann verwendet werden für:",
+        "items": [
+          "Nutzungsanalyse der App",
+          "Fehler- und Crash-Tracking",
+          "Verbesserung von Stabilität und Performance"
+        ],
+        "note": "Firebase kann technische Daten erfassen, einschließlich Geräte-IDs und Informationen über Interaktionen mit der App."
+      },
+      "3": {
+        "title": "Künstliche Intelligenz (KI)",
+        "lead": "Die App nutzt KI-Algorithmen, um:",
+        "items": [
+          "Essensempfehlungen zu generieren",
+          "Menüs zu erstellen und Bilder von Gerichten zu generieren"
+        ],
+        "note": "Zu diesem Zweck können Präferenzen und in der App eingegebene Daten verarbeitet werden. Die KI-Verarbeitung wird nicht für automatisierte Entscheidungen mit rechtlicher Wirkung verwendet."
+      },
+      "4": {
+        "title": "Werbedienste (Ads)",
+        "p1": "In der App kann Werbung angezeigt werden.",
+        "lead": "Werbepartner können:",
+        "items": [
+          "Werbe-IDs verwenden",
+          "Daten über Werbeinteraktionen erfassen"
+        ],
+        "note": "Wir geben keine personenbezogenen Daten wie Name oder E-Mail an Werbetreibende weiter."
+      }
+    },
+    "3": {
+      "title": "Wie wir Daten verwenden",
+      "intro": "Die erhobenen Daten werden ausschließlich zu folgenden Zwecken verwendet:",
+      "items": [
+        "Bereitstellung und Unterstützung der App-Funktionalität",
+        "Personalisierung von Inhalten und Empfehlungen",
+        "Verbesserung von Qualität und Nutzerfreundlichkeit",
+        "Analyse und Fehlerbehebung",
+        "Anzeige von Werbung (falls zutreffend)"
+      ],
+      "note": "Wir verkaufen keine personenbezogenen Daten der Nutzerinnen und Nutzer."
+    },
+    "4": {
+      "title": "Weitergabe von Daten an Dritte",
+      "intro": "Daten können nur an Dritte weitergegeben werden, die für den Betrieb der App erforderlich sind, einschließlich:",
+      "items": [
+        "Supabase",
+        "Google Firebase",
+        "Werbe- und Analysedienste"
+      ],
+      "note": "Die Weitergabe erfolgt gemäß DSGVO und geltendem Recht."
+    },
+    "5": {
+      "title": "Speicherung und Schutz von Daten",
+      "p1": "Wir setzen technische und organisatorische Maßnahmen ein, um Daten vor unbefugtem Zugriff, Verlust oder Veränderung zu schützen.",
+      "p2": "Daten werden nur so lange gespeichert, wie es für die in dieser Erklärung beschriebenen Zwecke erforderlich ist."
+    },
+    "6": {
+      "title": "Kontolöschung und Datenlöschung",
+      "p1": "Sie haben das Recht, Ihr Konto jederzeit zu löschen.",
+      "lead": "Die Löschung ist möglich:",
+      "items": [
+        "direkt in der App oder",
+        "durch Kontaktaufnahme mit dem Support"
+      ],
+      "note": "Nach der Kontolöschung werden alle zugehörigen personenbezogenen Daten gelöscht oder anonymisiert, außer wenn eine Aufbewahrung gesetzlich erforderlich ist."
+    },
+    "7": {
+      "title": "Ihre Rechte (DSGVO)",
+      "lead": "Sie haben das Recht:",
+      "items": [
+        "Auskunft über Ihre Daten zu erhalten",
+        "Berichtigung oder Löschung zu verlangen",
+        "die Verarbeitung einzuschränken",
+        "eine Einwilligung zur Verarbeitung zu widerrufen"
+      ],
+      "note": "Zur Ausübung dieser Rechte können Sie uns über die Kontaktdaten unten erreichen."
+    },
+    "8": {
+      "title": "Kinder",
+      "p1": "Die App ist nicht für Kinder unter 13 Jahren bestimmt. Wir erheben wissentlich keine personenbezogenen Daten von Kindern."
+    },
+    "9": {
+      "title": "Änderungen dieser Datenschutzerklärung",
+      "p1": "Wir können diese Datenschutzerklärung aktualisieren. Die aktuelle Version ist jederzeit auf dieser Seite verfügbar."
+    },
+    "10": {
+      "title": "Kontaktinformationen",
+      "p1": "Wenn Sie Fragen haben, können Sie uns kontaktieren:"
+    },
+    "11": {
+      "title": "Gerichtsstand",
+      "p1": "Diese Datenschutzerklärung unterliegt dem Recht der Europäischen Union (DSGVO) sowie anwendbaren nationalen Gesetzen."
+    }
+  },
+  "contact": {
+    "emailLabel": "E-Mail:"
+  },
+  "footer": {
+    "backToCutly": "Zurück zu Cutly"
+  }
+}
+

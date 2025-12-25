@@ -9,7 +9,11 @@ i18n
   .use(initReactI18next) // Модуль инициализации
   .init({
     fallbackLng: 'en', // Язык по умолчанию
+    supportedLngs: ['en', 'de'],
+    load: 'languageOnly',
     debug: true, // Включение отладки
+    ns: ['translation', 'cutlyPrivacy', 'cutlyTerms'],
+    defaultNS: 'translation',
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
       caches: ['cookie'], // Сохранение языка в куки
@@ -18,8 +22,11 @@ i18n
     interpolation: {
       escapeValue: false, // Не экранировать значения
     },
+    react: {
+      useSuspense: false,
+    },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json', // Путь к файлам переводов
+      loadPath: '/locales/{{lng}}/{{ns}}.json', // Путь к файлам переводов
     },
   });
 
