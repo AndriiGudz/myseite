@@ -12,7 +12,7 @@ i18n
     supportedLngs: ['en', 'de'],
     load: 'languageOnly',
     debug: true, // Включение отладки
-    ns: ['translation', 'cutlyPrivacy', 'cutlyTerms'],
+    ns: ['translation', 'cutlyPrivacy', 'cutlyTerms', 'cutlyDeleteAccount'],
     defaultNS: 'translation',
     detection: {
       order: ['querystring', 'cookie', 'localStorage', 'sessionStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],

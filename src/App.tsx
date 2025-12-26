@@ -9,6 +9,7 @@ import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 import CutlyPage from './pages/CutlyPage/CutlyPage';
 import PrivacyPolicyPage from './pages/CutlyPage/PrivacyPolicyPage';
 import TermsConditionsPage from './pages/CutlyPage/TermsConditionsPage';
+import DeleteAccountPage from './pages/CutlyPage/DeleteAccountPage';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
             <Route path="/cutly" element={<CutlyPage />} />
             <Route path="/cutly/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/cutly/terms" element={<TermsConditionsPage />} />
+            <Route path="/cutly/delete-account" element={<DeleteAccountPage />} />
           </Routes>
         </Layout>
       </BrowserRouter>
