@@ -51,6 +51,8 @@ import {
   DescriptionText,
 } from './styles'
 
+import { Link } from 'react-router-dom'
+
 import Logo from '../../assets/logo_cutly.png'
 import cutly1 from '../../assets/cutly_1.webp'
 import cutly2 from '../../assets/cutly_2.webp'
@@ -347,27 +349,34 @@ const CutlyPage: React.FC = () => {
         variants={fadeInUp}
       >
         <SectionTitle>{t('cutlyPage.accountTitle')}</SectionTitle>
-        <InfoBlock
-          style={{
-            borderLeft: '5px solid #E85D3F', // Terracotta color for warning/action
-            backgroundColor: '#FFF5F2', // Slightly reddish background
-          }}
+        <Link
+          to="/cutly/delete-account"
+          style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}
         >
-          <div
+          <InfoBlock
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '16px',
-              marginBottom: '20px',
+              borderLeft: '5px solid #E85D3F', // Terracotta color for warning/action
+              backgroundColor: '#FFF5F2', // Slightly reddish background
+              cursor: 'pointer',
+              transition: 'transform 0.2s ease',
             }}
           >
-            <FaUserMinus size={32} color="#E85D3F" />
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
-              {t('cutlyPage.accountHeading')}
-            </h3>
-          </div>
-          <CardText>{t('cutlyPage.accountText')}</CardText>
-        </InfoBlock>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '16px',
+                marginBottom: '20px',
+              }}
+            >
+              <FaUserMinus size={32} color="#E85D3F" />
+              <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>
+                {t('cutlyPage.accountHeading')}
+              </h3>
+            </div>
+            <CardText>{t('cutlyPage.accountText')}</CardText>
+          </InfoBlock>
+        </Link>
       </Section>
 
       {/* Developer & Footer */}

@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Konto- & Datenlöschung | Cutly",
+    "description": "So löschst du dein Cutly-Konto und deine personenbezogenen Daten"
+  },
+  "nav": {
+    "backToCutly": "Zurück zu Cutly"
+  },
+  "title": "Cutly – Konto- & Datenlöschung",
+  "lead": "So löschst du dein Cutly-Konto und deine personenbezogenen Daten",
+  "intro": "Du kannst dein Cutly-Konto auf eine der folgenden Arten löschen:",
+  "options": {
+    "1": {
+      "title": "Option 1: In der App",
+      "p1": "Öffne die Cutly-App → Einstellungen → Konto löschen.",
+      "p2": "Dein Konto und alle zugehörigen personenbezogenen Daten werden dauerhaft gelöscht."
+    },
+    "2": {
+      "title": "Option 2: Per E‑Mail-Anfrage",
+      "emailLabel": "Sende eine E‑Mail an:",
+      "subjectLabel": "Betreff:",
+      "subjectValue": "Anfrage zur Kontolöschung",
+      "includeLabel": "Bitte füge Folgendes hinzu:",
+      "includeItems": [
+        "Die E‑Mail-Adresse, die du bei der Registrierung verwendet hast",
+        "Eine kurze Bestätigung, dass du dein Konto löschen möchtest"
+      ]
+    }
+  },
+  "dataDeleted": {
+    "title": "Welche Daten werden gelöscht:",
+    "items": [
+      "Benutzerkonto (E‑Mail, Authentifizierungsdaten)",
+      "Persönliche Präferenzen",
+      "Gespeicherte Mahlzeiten und Einstellungen"
+    ]
+  },
+  "retention": {
+    "title": "Aufbewahrung von Daten:",
+    "items": [
+      "Alle personenbezogenen Daten werden sofort oder innerhalb von 30 Tagen gelöscht.",
+      "Nach der Löschung werden keine Daten gespeichert, außer wenn gesetzlich erforderlich."
+    ]
+  },
+  "footer": {
+    "backToCutly": "Zurück zu Cutly"
+  }
+}
+

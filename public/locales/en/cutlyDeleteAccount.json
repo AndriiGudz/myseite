@@ -1,0 +1,49 @@
+{
+  "seo": {
+    "title": "Account & Data Deletion | Cutly",
+    "description": "How to delete your Cutly account and personal data"
+  },
+  "nav": {
+    "backToCutly": "Back to Cutly"
+  },
+  "title": "Cutly – Account & Data Deletion",
+  "lead": "How to delete your Cutly account and personal data",
+  "intro": "You can delete your Cutly account in one of the following ways:",
+  "options": {
+    "1": {
+      "title": "Option 1: Inside the app",
+      "p1": "Open the Cutly app → Settings → Delete account.",
+      "p2": "Your account and all associated personal data will be permanently deleted."
+    },
+    "2": {
+      "title": "Option 2: Via email request",
+      "emailLabel": "Send an email to:",
+      "subjectLabel": "Subject:",
+      "subjectValue": "Account deletion request",
+      "includeLabel": "Please include:",
+      "includeItems": [
+        "The email address used for registration",
+        "A short confirmation that you want to delete your account"
+      ]
+    }
+  },
+  "dataDeleted": {
+    "title": "What data will be deleted:",
+    "items": [
+      "User account (email, authentication data)",
+      "Personal preferences",
+      "Saved meals and settings"
+    ]
+  },
+  "retention": {
+    "title": "Data retention:",
+    "items": [
+      "All personal data is deleted immediately or within 30 days.",
+      "No data is kept after deletion, except where legally required."
+    ]
+  },
+  "footer": {
+    "backToCutly": "Back to Cutly"
+  }
+}
+
