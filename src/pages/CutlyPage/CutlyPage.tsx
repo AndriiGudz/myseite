@@ -46,12 +46,9 @@ import {
   TechName,
   Footer,
   FooterLink,
-  StyledRouterLink,
   LogoImage,
   DescriptionText,
 } from './styles'
-
-import { Link } from 'react-router-dom'
 
 import Logo from '../../assets/logo_cutly.png'
 import cutly1 from '../../assets/cutly_1.webp'
