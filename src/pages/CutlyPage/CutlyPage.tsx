@@ -325,18 +325,18 @@ const CutlyPage: React.FC = () => {
           </div>
           <CardText>{t('cutlyPage.privacyText')}</CardText>
           <div style={{ marginTop: '20px', display: 'flex', gap: '20px' }}>
-            <StyledRouterLink
-              to="/cutly/privacy"
-              style={{ color: '#2D8259', margin: 0 }}
+            <a
+              href="/cutly-privacy.html"
+              style={{ color: '#2D8259', margin: 0, textDecoration: 'none', fontWeight: 'bold' }}
             >
               {t('cutlyPage.privacyPolicy')}
-            </StyledRouterLink>
-            <StyledRouterLink
-              to="/cutly/terms"
-              style={{ color: '#2D8259', margin: 0 }}
+            </a>
+            <a
+              href="/cutly-terms.html"
+              style={{ color: '#2D8259', margin: 0, textDecoration: 'none', fontWeight: 'bold' }}
             >
               {t('cutlyPage.terms')}
-            </StyledRouterLink>
+            </a>
           </div>
         </InfoBlock>
       </Section>
@@ -349,8 +349,8 @@ const CutlyPage: React.FC = () => {
         variants={fadeInUp}
       >
         <SectionTitle>{t('cutlyPage.accountTitle')}</SectionTitle>
-        <Link
-          to="/cutly/delete-account"
+        <a
+          href="/cutly-delete-account.html"
           style={{ textDecoration: 'none', color: 'inherit', width: '100%' }}
         >
           <InfoBlock
@@ -376,7 +376,7 @@ const CutlyPage: React.FC = () => {
             </div>
             <CardText>{t('cutlyPage.accountText')}</CardText>
           </InfoBlock>
-        </Link>
+        </a>
       </Section>
 
       {/* Developer & Footer */}
